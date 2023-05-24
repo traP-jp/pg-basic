@@ -22,7 +22,7 @@ cname: []
 internal: "off"
 
 # use secure access <"off", "on"> (default: "off")
-https: "off"
+https: "on"
 
 # <<< branch deploy setting >>>
 
