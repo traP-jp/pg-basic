@@ -12,7 +12,7 @@ hero:
       link: /text/section-0
     - theme: alt
       text: このテキストについて
-      link: /404
+      link: /about
 
 features:
   - title: Feature A

@@ -4,22 +4,47 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "pg-basic text",
   description: "プログラミング基礎講習会テキスト",
-  cleanUrls: true,
+  cleanUrls: false,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'ホーム', link: '/' },
-      { text: 'テキスト', link: '/text' }
+      { text: 'テキスト', link: '/text/section-0' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'About',
         items: [
-          { text: '0. はじめに', link: '/text/section-0' },
-          { text: '環境構築 Mac', link: 'text/enviroment/mac'},
-          { text: '環境構築 Windows', link: 'text/enviroment/windows'},
-          { text: 'I. ', link: '/text/section-1' },
+          { text: 'このテキストについて', link: '/about' }
+        ]
+      },
+      {
+        text: 'Text',
+        items: [
+          {
+            text: '0. はじめに',
+            link: '/text/section-0',
+            items: [
+              { text: '環境構築 - Mac', link: '/text/enviroment/mac'},
+              { text: '環境構築 - Windows', link: '/text/enviroment/windows'}
+            ]
+          },
+          { text: 'I. はじめてのプログラミング', link: '/text/section-1' },
+          { text: 'II. 変数と入出力', link: '/text/section-2' },
+          { text: 'III. 演算・計算', link: '/text/section-3' },
+          { text: 'IV. 繰り返し処理', link: '/text/section-4' },
+          { text: 'V. コードの簡易化① - Function', link: '/text/section-5' },
+          { text: 'VI. コードの簡易化② - Struct', link: '/text/section-6' },
+          { text: 'VII. おわりに・おまけ', link: '/text/section-7' },
+          { text: 'VIII. 発展事項 (WIP)', link: '/text/section-8' },
+        ]
+      },
+      {
+        text: 'for traP Member Only',
+        items: [
+          { text: '講習会 Wiki ページ', link: 'https://wiki.trap.jp/Event/welcome/23/lecture/pg-basic' },
+          { text: '練習問題', link: 'https://md.trap.jp/IE4NUAc_RR-USMIXlevsgA' },
         ]
       }
     ],

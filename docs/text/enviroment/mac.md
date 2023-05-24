@@ -1,8 +1,8 @@
 ---
 title: プログラミング環境構築 Mac
 tags: pg-basic-text
-prev: {'link': '/text/section-0', 'text': '0. はじめに'}
-next: false
+prev: {link: 'about', text: 'このテキストについて'}
+next: {link: '/text/section-0', text: '0. はじめに'}
 ---
 
 # 環境構築 Mac
