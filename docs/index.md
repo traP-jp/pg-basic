@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "pg-basic text"
-  text: "プログラミング基礎講習会テキスト"
-  tagline: My great project tagline
+  name: "pg-basic"
+  text: "Programming-basic lecture class"
+  tagline: "プログラミング基礎講習会テキスト"
   actions:
     - theme: brand
       text: Markdown Examples
