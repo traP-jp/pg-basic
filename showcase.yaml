@@ -16,7 +16,9 @@ work_dir: "docs/.vitepress/dist"
 # <<< static or http-proxied-runtime only setting >>>
 
 # additional server name <array or string> (default: [])
-cname: []
+cname: [
+    "pg-basic.trap.show"
+]
 
 # parse user token, restrict access from non-traP user <"off", "soft", "hard"> (default: "off")
 internal: "off"
