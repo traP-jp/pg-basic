@@ -8,16 +8,22 @@ hero:
   tagline: "プログラミング基礎講習会テキスト"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: テキストを開く
+      link: /text/section-0
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: このテキストについて
+      link: /404
 
 features:
   - title: Feature A
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature B
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Feature C
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Feature C
+    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
