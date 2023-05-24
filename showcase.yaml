@@ -17,7 +17,7 @@ work_dir: "docs/.vitepress/dist"
 
 # additional server name <array or string> (default: [])
 cname: [
-    "pg-basic.trap.show"
+    "text.pg-basic.trap.show"
 ]
 
 # parse user token, restrict access from non-traP user <"off", "soft", "hard"> (default: "off")
