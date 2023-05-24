@@ -1,33 +1,11 @@
-# <<< common setting >>>
-
-# deploy mode <"static", "runtime", "fcgi-*"> (required)
 type: "static"
-
-# script executed on startup (default: null)
 startup: npm i && npm run docs:build
-
-# use external databases (default: false)
-use_mongodb: false
-use_mariadb: false
-
-# relative path to document root (default: .)
 work_dir: "docs/.vitepress/dist"
 
-# <<< static or http-proxied-runtime only setting >>>
-
-# additional server name <array or string> (default: [])
-cname: [
-    "pg-basic.trap.games"
-]
-
-# parse user token, restrict access from non-traP user <"off", "soft", "hard"> (default: "off")
+cname: "pg-basic.trap.games"
 internal: "off"
 
-# use secure access <"off", "on"> (default: "off")
 https: "on"
 
-# <<< branch deploy setting >>>
-
-# custom deploy setting <see document!> (default: {master: null})
 branch:
     main: null
