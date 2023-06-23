@@ -1,8 +1,7 @@
 ---
 title: プログラミング環境構築 Mac
-tags: pg-basic-text
-prev: {link: 'about', text: 'このテキストについて'}
-next: {link: '/text/section-0', text: '0. はじめに'}
+prev: {link: '/text/chapter-0/', text: '0. はじめに'}
+next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 ---
 
 # 環境構築 Mac
@@ -17,7 +16,7 @@ next: {link: '/text/section-0', text: '0. はじめに'}
 4. ターミナルを起動する。 
 5. `clang --version` と入力
 
-:::info
+::: tip
 なにかインストールを求められた時は、指示に従ってインストールしてください。心配なら TA を呼んでください。
 :::
 
@@ -68,7 +67,7 @@ next: {link: '/text/section-0', text: '0. はじめに'}
 + "cpp": "cd $dir && clang++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
 ```
 
-:::info
+::: tip
 なかった場合は、一番最後の行の1つ前の行（ `}` の前！）に次のコードを追加してください。その前の行に `,` がなかったら追加してください！
 
 ```
@@ -102,7 +101,7 @@ int main() {
 10. 画像の赤丸で実行してみる。下側の画面に `Hello, World!` が出れば成功！
 ![](https://md.trap.jp/uploads/upload_750a50362d2ae00ffcf2f4b041446ed9.png)
 
-:::info
+::: tip
 なにか出てきた場合は、代わりに三角の隣の`v` を押して、「Run Code」を押す！
 
 ![](https://md.trap.jp/uploads/upload_2b042cfaa37207457e419a5380ccd466.png)

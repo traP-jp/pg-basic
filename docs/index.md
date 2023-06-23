@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: テキストを開く
-      link: /text/section-0
+      link: /text/chapter-0/
     - theme: alt
       text: このテキストについて
       link: /about

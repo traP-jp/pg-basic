@@ -1,18 +1,34 @@
 {
-  "name": "pg-basic",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "vitepress": "1.0.0-beta.1"
-  }
+    "name": "pg-basic",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "docs:dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:preview": "vitepress preview docs"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@mermaid-js/mermaid-mindmap": "^9.3.0",
+        "@types/node": "^20.3.1",
+        "@wekanteam/markdown-it-mermaid": "^0.6.4",
+        "install": "^0.13.0",
+        "markdown-it-charts": "^1.0.5",
+        "markdown-it-container": "^3.0.0",
+        "markdown-it-mathjax": "^2.0.0",
+        "markdown-it-mermaid": "^0.2.5",
+        "markdown-it-texmath": "^1.0.0",
+        "mermaid": "^9.4.3",
+        "npm": "^9.7.1",
+        "vitepress": "1.0.0-beta.1",
+        "vitepress-plugin-mermaid": "^2.0.10"
+    },
+    "dependencies": {
+        "markdown-it": "^13.0.1",
+        "markdown-it-mathjax3": "^4.3.2"
+    }
 }
