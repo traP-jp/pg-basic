@@ -13,7 +13,7 @@ export default withMermaid({
     description: "プログラミング基礎講習会テキスト",
     cleanUrls: false,
     markdown: {
-            
+
 //        lineNumbers: true,
         config: (md) => {
             md.use(
@@ -68,10 +68,43 @@ export default withMermaid({
             {
                 text: 'III. 演算・計算',
                 link: '/text/chapter-3/',
+                items: [
+                    {text: '条件分岐', link: '/text/chapter-3/if-else'},
+                    {text: '型', link: '/text/chapter-3/type'},
+                ]
             },
-            {text: 'IV. 繰り返し処理', link: '/text/chapter-4/'},
-            {text: 'V. コードの簡易化① - Function', link: '/text/chapter-5/'},
-            {text: 'VI. コードの簡易化② - Struct', link: '/text/chapter-6/'},
+            {
+                text: 'IV. 繰り返し処理',
+                link: '/text/chapter-4/',
+                items: [
+                    {text: 'for ①', link: '/text/chapter-4/for-basic'},
+                    {text: 'while', link: '/text/chapter-4/while'},
+                    {text: '配列', link: '/text/chapter-4/array'},
+                    {text: '文字列 ②', link: '/text/chapter-4/string'},
+                    {text: 'for ②', link: '/text/chapter-4/for-advanced'},
+                ]
+            },
+            {
+                text: 'V. コードの簡易化① - Function',
+                link: '/text/chapter-5/',
+                items: [
+                    {text: '関数とは', link: '/text/chapter-5/about-function'},
+                    {text: '引数', link: '/text/chapter-5/argument'},
+                    {text: '返り値', link: '/text/chapter-5/return-value'},
+                    {text: '再帰関数', link: '/text/chapter-5/recursive-function'},
+                    {text: '実行時間', link: '/text/chapter-5/exec-time'},
+                    {text: '参照渡し', link: '/text/chapter-5/call-by-ref'},
+                ]
+            },
+            {
+                text: 'VI. コードの簡易化② - Struct',
+                link: '/text/chapter-6/',
+                items: [
+                    {text: '構造体', link: '/text/chapter-6/struct'},
+                    {text: 'メソッド', link: '/text/chapter-6/method'},
+                    {text: 'カプセル化', link: '/text/chapter-6/capsule'},
+                ]
+            },
             {text: 'VII. おわりに・おまけ', link: '/text/chapter-7/'},
             {text: 'VIII. 発展事項 (WIP)', link: '/text/chapter-8/'},
             {
