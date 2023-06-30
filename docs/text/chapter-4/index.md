@@ -31,40 +31,26 @@ for ([初期化];[条件];[継続処理]) {
 }
 ```
 
-```flow
-st=>start: Start
-e=>end: End
-
-for=>operation: for
-init=>operation: [初期化]
-cond=>condition: [条件]
-cont=>operation: [継続処理]
-work=>operation: [実行文]
-
-st->for->init->cond
-work->cont(left)->cond
-
-cond(yes, down)->work
-cond(no)->e
+```mermaid
+flowchart LR
+    start[Start] --> init[[初期化]]
+    subgraph for
+      init[[初期化]] --> cond[[条件]]
+      cond --> |Yes| work[["処理"]] --> cont[["継続処理"]] --> cond
+      end
+    cond --> |No| e["End"]
 ```
 
 例示したコードで当てはめると以下のようになる。
 
-```flow
-st=>start: Start
-e=>end: End
-
-for=>operation: for
-init=>operation: int i=0
-cond=>condition: i<5
-cont=>operation: i++
-work=>operation: cout << i
-
-st->for->init->cond
-work->cont(left)->cond
-
-cond(yes, down)->work
-cond(no)->e
+```mermaid
+flowchart LR
+    start[Start] --> init[[初期化]]
+    subgraph for
+      init[[int i=0]] --> cond[[i<5]]
+      cond --> |Yes| work[[cout << i]] --> cont[[i++]] --> cond
+      end
+    cond --> |No| e["End"]
 ```
 
 つまり、0,1,2,3,4 の整数を出力するプログラムである。これを使えば、例えば $7^4$ 等がプログラムで計算できる。
@@ -82,6 +68,16 @@ while (a > 0) {
 while文は、 `while` の中の条件文が真の間実行される繰り返し処理。
 
 上記のコードだと、 10,9,8,7,6,5,4,3,2,1 と順に出力される。
+
+```mermaid
+flowchart LR
+    start[Start] --> init[[int a = 10]]
+    init --> cond[[a>0]]
+    subgraph while
+      cond --> |Yes| work[[cout << a]] --> cont[[a--]] --> cond
+      end
+    cond --> |No| e["End"]
+```
 
 ```flow
 st=>start: Start
@@ -104,8 +100,6 @@ cond(no)->e
 
 プログラミングでは、同じ様な変数を複数作りたいときがある。例えば、100人の点数の平均点を取りたい時に変数は100個必要となる。このときに、配列を使う。
 
-
-
 配列とは、変数の集合のようなものである。
 
 C++ において配列を使う時は、`vector` を用いる。`string` と同様にして、`vector`をインクルードする。
@@ -127,8 +121,8 @@ vector<string> strarray;
 vector<int> arr = {10, 20, 30, 40, 50};
 ```
 
-
-以下のように、 `[]` の中に数字を書くことで要素を取得できる。数列を考えた時の $a_i$ の $i$ だと思うと良い。この時要素は**0始まり**である。
+以下のように、 `[]` の中に数字を書くことで要素を取得できる。数列を考えた時の $a_i$ の $i$ だと思うと良い。この時要素は*
+*0始まり**である。
 
 ```cpp:line-numbers
 vector<int> arr = {10, 20, 30, 40, 50};
@@ -165,7 +159,8 @@ for (int i=0; i < arr.size(); i++) {
 }
 ```
 
-`for` 文の中で、 `arr[0]` から `arr[4]` までが1つずつ出力されるコードだという事が理解できるだろうか。`i < arr.size()` の条件から、`i` は 0 から 4 までの場合で実行される。（5 は `5 < 5` となり条件を満たさない。）
+`for` 文の中で、 `arr[0]` から `arr[4]` までが1つずつ出力されるコードだという事が理解できるだろうか。`i < arr.size()`
+の条件から、`i` は 0 から 4 までの場合で実行される。（5 は `5 < 5` となり条件を満たさない。）
 
 `.push_back()` を用いると、配列の末尾に新しい要素を追加することができる。
 
@@ -176,12 +171,12 @@ arr.push_back(-10);
 cout << arr[5] << endl;
 cout << arr.size() << endl;
 ```
+
 ```
 [output]
 -10
 6
 ```
-
 
 for文と組み合わせると、できる事が非常に広がる。
 
@@ -297,7 +292,8 @@ string 型同士で比較するときに、1文字目を比較→同じなら2�
 これは1バイトで扱える情報が 256 通りしかないから、日本語は1バイトだけでは扱うことができない。
 それゆえ、日本語（ひらがなカタカナ等）はマルチバイト文字で表現されている（複数バイトで1文字を表す方式）。
 
-ここで、`char` 型は、正確には「1バイトの整数型」である。よって、`char`型ではひらがな等の字を扱うことができない。実際に試してみると、5文字なのに長さは15と表示されてしまうし、1文字目を出力してみようと思ってもうまく出力されない。例えば「こ」の場合は、3文字出力してようやく「こ」が表示されるのである。
+ここで、`char` 型は、正確には「1バイトの整数型」である。よって、`char`
+型ではひらがな等の字を扱うことができない。実際に試してみると、5文字なのに長さは15と表示されてしまうし、1文字目を出力してみようと思ってもうまく出力されない。例えば「こ」の場合は、3文字出力してようやく「こ」が表示されるのである。
 
 ```cpp:line-numbers
 string dame = "こんにちは";
@@ -305,6 +301,7 @@ cout << dame.length() << endl;
 cout << dame[0] << endl;
 cout << dame[0] << dame[1] << dame[2] << endl;
 ```
+
 ```
 [output]
 15
@@ -318,25 +315,32 @@ C++ 以外の言語でも大体は文字列を扱えるが、マルチバイト�
 ::: tip
 
 #### 4.4.5.1. 文字化け
+
 ここで横道に逸れてしまうが、せっかくの機会なので「文字化け」についても触れておこう。
 
 **歴史的な経緯**
-ASCII では日本語文字を扱えないのは明らかだったので、1文字で2バイトを使う文字コード体系が考案された。2バイトであれば $2^{16}=65536$ 文字を扱えるので、これだけあれば十分だという事である。
-しかし、結果としては国内で文字コードが乱立し（Shift-JIS, EUC-JP 等…）、様々衝突するようになった上、国内にとどまらず各国で独自の文字コードが作成されてしまい、混乱を極めてしまったのである（ASCII で表せないのは日本語だけではなく、アラビア文字・簡体字・ギリシャ文字など様々…）。
+ASCII では日本語文字を扱えないのは明らかだったので、1文字で2バイトを使う文字コード体系が考案された。2バイトであれば
+$2^{16}=65536$ 文字を扱えるので、これだけあれば十分だという事である。
+しかし、結果としては国内で文字コードが乱立し（Shift-JIS, EUC-JP
+等…）、様々衝突するようになった上、国内にとどまらず各国で独自の文字コードが作成されてしまい、混乱を極めてしまったのである（ASCII
+で表せないのは日本語だけではなく、アラビア文字・簡体字・ギリシャ文字など様々…）。
 
-最終的には、世界の全文字を扱う文字コードとして Unicode (≒ UTF-8) が策定され、今日ではこれが普及している。しかし完全に普及している訳でもなく、よって、今日見かける文字化けはもっぱら「UTF-8 か UTF-8 以外か」の文字コードを使って発生しているパターンである。
+最終的には、世界の全文字を扱う文字コードとして Unicode (≒ UTF-8)
+が策定され、今日ではこれが普及している。しかし完全に普及している訳でもなく、よって、今日見かける文字化けはもっぱら「UTF-8 か
+UTF-8 以外か」の文字コードを使って発生しているパターンである。
 
 **CJK 問題**
-また、日本語の漢字が中国語のフォントで表示されている、という謎の現象に遭遇したこともあるかもしれない。これは、Unicode を制定した際に日本語・中国語（簡体字・繁体字）・韓国語の漢字について、似ている漢字を全て一緒くたにしてしまった事が原因である。 → [Your Code Displays Japanese Wrong](https://heistak.github.io/your-code-displays-japanese-wrong/)
+また、日本語の漢字が中国語のフォントで表示されている、という謎の現象に遭遇したこともあるかもしれない。これは、Unicode
+を制定した際に日本語・中国語（簡体字・繁体字）・韓国語の漢字について、似ている漢字を全て一緒くたにしてしまった事が原因である。 → [Your Code Displays Japanese Wrong](https://heistak.github.io/your-code-displays-japanese-wrong/)
 
 **横道**
 （横道の横道はもう獣道では…？）
 日本国内は2バイト文字コードの覇権を争うために揉めていたが、その間ヨーロッパでは自国専用の1バイト文字が乱立していて同じように揉めていたらしい。
 :::
 
-
 ::: tip
-`int` 型は 4バイトの整数型である。扱える情報は $2^{32}$ で、整数は負と正の値を取るから非負整数の部分にに $2^{31}$ 個を割り当てる。$2^{31}=2147483648
+`int` 型は 4バイトの整数型である。扱える情報は $2^{32}$ で、整数は負と正の値を取るから非負整数の部分にに $2^{31}$
+個を割り当てる。$2^{31}=2147483648
 $ なのだが、実はこの値は既にテキストで一度出現している。さてどこだろうか？
 :::
 
@@ -364,25 +368,17 @@ for (int i=0; i<v.size(); i++) {
 0
 ```
 
-```flow
-st=>start: Start
-e=>end: End
-
-for=>operation: for
-init=>operation: int i=0
-cond=>condition: i<5
-cont=>operation: i++
-work=>operation: cout << v[i]
-isZero=>condition: v[i]==0
-break=>operation: break
-
-st->for->init->cond
-
-isZero(no, down)->cont(left)->cond
-isZero(yes)->break(right)->e
-
-cond(yes, down)->work->isZero
-cond(no)->e
+```mermaid
+flowchart LR
+    start[Start] --> declare["v = {1,4,0,6,10}"] --> init[[int i=0]]
+    subgraph for
+      init --> cond[[i<5]]
+      cond --> |Yes| work[["cout << v[i]"]] --> isZero
+      isZero --> |Yes| break[[break]]
+      isZero --> |No| cont[[i++]] --> cond
+      end
+    break --> e
+    cond --> |No| e["End"]
 ```
 
 ### 4.5.2. continue
@@ -398,6 +394,18 @@ for (int i=0; i<v.size(); i++) {
   }
   cout << v[i] << endl;
 }
+```
+
+```mermaid
+flowchart LR
+    start[Start] --> declare["v = {1,4,0,6,10}"] --> init[[int i=0]]
+    subgraph for
+      init --> cond[[i<5]]
+      cond --> isZero
+      isZero --> |Yes| continue[[continue]] --> cont
+      isZero --> |No| work[["cout << v[i]"]] --> cont[[i++]] --> cond
+      end
+    cond --> |No| e["End"]
 ```
 
 ```flow

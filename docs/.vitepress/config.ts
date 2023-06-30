@@ -2,17 +2,18 @@ import {defineConfig} from 'vitepress'
 
 const containerMdExtend = require('./detail-plugin.js');
 const markdowinItCharts = require('markdown-it-charts');
-import markdownItMermaid from 'markdown-it-mermaid'
+//import markdownItMermaid from 'markdown-it-mermaid'
 import {withMermaid} from "vitepress-plugin-mermaid";
 
 
 // https://vitepress.dev/reference/site-config
 
-export default defineConfig({
+export default withMermaid({
     title: "pg-basic text",
     description: "プログラミング基礎講習会テキスト",
     cleanUrls: false,
     markdown: {
+            
 //        lineNumbers: true,
         config: (md) => {
             md.use(
@@ -21,7 +22,6 @@ export default defineConfig({
                 containerMdExtend(md),
             );
             md.use(markdowinItCharts);
-            md.use(markdownItMermaid);
             md.use(require('markdown-it-mathjax3'));
         }
     },

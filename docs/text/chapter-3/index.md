@@ -28,35 +28,27 @@ int main() {
 
 フローチャートで表すと以下のようになる。
 
-```flow
-st=>start: Start
-e=>end: End
-condover=>condition: score >= 60?
-printover=>operation: "合格"
-condunder=>condition: score < 60?
-printunder=>operation: "不合格"
-
-st->condover
-printover->condunder
-printunder->e
-
-condover(no)->condunder
-condover(yes)->printover
-
-condunder(yes)->printunder
-condunder(no)->e
+```mermaid
+flowchart LR
+    start[Start] --> condover{{"score >= 60?"}}
+    condover --> |Yes| printover["合格"]
+    printover --> condunder
+    condover --> |No| condunder{{"score < 60?"}}
+    condunder --> |Yes| printunder["不合格"]
+    printunder --> e
+    condunder --> |No| e[End]
 ```
 
 `score >= 60` は、 $score \geq 60$ と同じである。 `+-/*` と同じくして、条件を記述する演算子も存在する。演算子は以下の通り。
 
-| 演算子 | 数学の記号 |
-| ------ | ---------- |
-| `>=`   | $\geq$     |
-| `>`    | $>$        |
-| `<`    | $<$        |
-| `<=`   | $\leq$     |
-| `==`   | $=$        |
-| `!=`   | $\neq$     |
+| 演算子  | 数学の記号  |
+|------|--------|
+| `>=` | $\geq$ |
+| `>`  | $>$    |
+| `<`  | $<$    |
+| `<=` | $\leq$ |
+| `==` | $=$    |
+| `!=` | $\neq$ |
 
 :::warning
 `==` と `=` を混同しないように注意。 `=` は**代入** 、 `==` が**等価** である。
@@ -64,7 +56,8 @@ condunder(no)->e
 
 ### 3.1.2. else 文
 
-3.1.1. で示した例は、60点以上「でない」ときを `if (score < 60)` と記述することで実装した。ただ、実際には「そうでない時」を else 文によって簡単に記述できる。
+3.1.1. で示した例は、60点以上「でない」ときを `if (score < 60)` と記述することで実装した。ただ、実際には「そうでない時」を else
+文によって簡単に記述できる。
 
 ```cpp:line-numbers
 #include <iostream>
@@ -87,23 +80,13 @@ int main() {
 else 文は、if文の終わり（ = `}` ）の次に書く必要がある。
 :::
 
-```flow
-st=>start: Start
-e=>end: End
-condover=>condition: score >= 60?
-printover=>operation: "合格"
-condunder=>condition: score < 60?
-printunder=>operation: "不合格"
-
-st->condover
-printover->e
-printunder->e
-
-condover(no)->printunder
-condover(yes)->printover
-
-condunder(yes)->printunder
-condunder(no)->e
+```mermaid
+flowchart LR
+    start[Start] --> condover{{"score >= 60?"}}
+    condover --> |Yes| printover("合格")
+    printover --> e[End]
+    condover --> |else| printunder("不合格")
+    printunder --> e
 ```
 
 ### 3.1.3. else if
@@ -131,30 +114,16 @@ int main() {
 }
 ```
 
-```flow
-st=>start: Start
-e=>end: End
-condperfect=>condition: score == 100?
-printperfect=>operation: "満点"
-condover=>condition: score >= 60?
-printover=>operation: "合格"
-condunder=>condition: score < 60?
-printunder=>operation: "不合格"
-
-st->condperfect
-
-condperfect(yes)->printperfect
-condperfect(no)->condover
-
-printover->e
-printunder->e
-printperfect->e
-
-condover(no)->condunder
-condover(yes)->printover
-
-condunder(yes)->printunder
-condunder(no)->e
+```mermaid
+flowchart LR
+    start[Start] --> condperfect{{"score == 100?"}}
+    condperfect --> |Yes| printperfect("満点")
+    printperfect --> e[End]
+    condperfect --> |else| condover{{"score >= 60?"}}
+    condover --> |Yes| printover("合格")
+    condover --> |else| printunder("不合格")
+    printover --> e
+    printunder --> e
 ```
 
 ただ、このように書くのは冗長なので、`else if` と短縮する事が許されている。
@@ -186,11 +155,11 @@ int main() {
 しかし、条件が2つ以上になるとif と else だけでは煩雑になっていく。
 数学では「または」、「かつ」 「でない」（$\lor,\land, \lnot$） をよく使ったと思うが、プログラミングでもそれに当たるものが存在する。
 
-| 演算子 | 意味 | 意味・数学記号 |
-| ------ | ---- | --- |
-| `&&`   | AND  | かつ $\land$ |
-| `||`   | OR   | または $\lor$ |
-| `!`    | NOT  | でない $\lnot$ |
+| 演算子  | 意味  | 意味・数学記号     |
+|------|-----|-------------|
+| `&&` | AND | かつ $\land$  |
+| `    |     | `           | OR   | または $\lor$ |
+| `!`  | NOT | でない $\lnot$ |
 
 ```cpp:line-numbers
 int x = 8;
@@ -229,7 +198,8 @@ cout << x << endl; // OK !
 
 ## 3.2. 演算子の優先順位
 
-数学と同じように、演算子には優先順位がついている。優先順位自体は覚えなくても良いが、たまに優先順位が自分の想定と違うときがある。そのようなときは `()` で式をくくることで、計算順序を変えられるので覚えると良い（数学と同じ）。
+数学と同じように、演算子には優先順位がついている。優先順位自体は覚えなくても良いが、たまに優先順位が自分の想定と違うときがある。そのようなときは `()`
+で式をくくることで、計算順序を変えられるので覚えると良い（数学と同じ）。
 
 特に、 `<<` は比較演算子より優先順位が高い。
 `cout << a <= b << endl;` と書くとコンパイルエラーとなってしまうので2行目のように書かなければならない。
@@ -326,7 +296,8 @@ cout << b << endl;
 コンピューターの扱う 2 進数の世界でも同じ事が言えて、2進数で `0.1` や `0.2` 等の値は循環小数となる。
 （例えば $0.2_{(10)}=0.\dot001\dot1_{(2)}=0.00110011..._{(2)}$ ）
 
-この時、コンピューターは小数をある程度の位で打ち切って、値を丸め込んで保存する。この時に誤差が発生してしまい、故に上記のコードは `false` を出力するのである。
+この時、コンピューターは小数をある程度の位で打ち切って、値を丸め込んで保存する。この時に誤差が発生してしまい、故に上記のコードは `false`
+を出力するのである。
 
 実際に `x+y` の値を出力すると良いだろう。
 
@@ -342,10 +313,12 @@ cout << x+y << endl;
 0.30000000000000004
 ```
 
-その為に、小数値を使って**正確な**演算をするのは基本的には**避けた方が良い**と言われる。例えば単位の60点を超えているかどうかの判定で、60点ぴったりなはずだったのに誤差の関係で不合格と言われたらたまったものではない。
+その為に、小数値を使って**正確な**演算をするのは基本的には**避けた方が良い**
+と言われる。例えば単位の60点を超えているかどうかの判定で、60点ぴったりなはずだったのに誤差の関係で不合格と言われたらたまったものではない。
 （ゲーム製作においては座標計算の都合でどうしても小数を使うのだが…）
 
-ちなみに、整数でデータを上手に持つ事で小数を正確に扱う方法もある。（例えば 分母と分子で 2 変数を持ってしまえば、有理数は常に正確に計算できる）。また、有理数・有限小数を正確に扱えるパッケージ（ライブラリ）も存在する。
+ちなみに、整数でデータを上手に持つ事で小数を正確に扱う方法もある。（例えば 分母と分子で 2
+変数を持ってしまえば、有理数は常に正確に計算できる）。また、有理数・有限小数を正確に扱えるパッケージ（ライブラリ）も存在する。
 
 ### 3.3.3. string ①
 
@@ -412,6 +385,7 @@ different
 他にも文字列に対して `>=` 、 `<=` などの演算が定義されているが、これは次章で少しだけ扱う（本日の講習は（予定通りなら）ここで終わるので、余裕があれば自分で色々調べてみても良いだろう）。
 
 ::: tip III 章まとめ
+
 * if 文、else 文で条件分岐ができます。
 * `if(x==0)` はどのような条件を表していますか？ `==` は比較、 `=` は代入です。
 * bool 型は 0 か 1 の値を持つ型です。
