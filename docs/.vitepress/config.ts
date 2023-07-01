@@ -27,6 +27,9 @@ export default withMermaid({
     },
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
+        search: {
+            provider: 'local'
+        },
         nav: [
             {text: 'ホーム', link: '/'},
             {text: 'テキスト', link: '/text/section-0/'}

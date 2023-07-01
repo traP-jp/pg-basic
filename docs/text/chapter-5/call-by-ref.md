@@ -132,9 +132,3 @@ int main() {
 関数から変更できるようになるのである。
 
 この機能を **参照** と言い、この書き方を **参照渡し** と呼ぶ。
-
-::: info
-[**\[ V の練習問題へ\]**](https://md.trap.jp/IE4NUAc_RR-USMIXlevsgA#Section-V)
-
-[**\[講習会ページに戻る\]**](https://wiki.trap.jp/Event/welcome/23/lecture/pg-basic)
-:::

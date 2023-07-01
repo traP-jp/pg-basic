@@ -21,21 +21,3 @@ flowchart LR
       end
     cond --> |No| e["End"]
 ```
-
-```flow
-st=>start: Start
-e=>end: End
-
-while=>operation: while
-init=>operation: int a = 10
-cond=>condition: a>0
-cont=>operation: a--
-work=>operation: cout << a
-
-st->init->while->cond
-work->cont(left)->cond
-
-cond(yes, down)->work
-cond(no)->e
-```
-

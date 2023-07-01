@@ -62,29 +62,6 @@ flowchart LR
     cond --> |No| e["End"]
 ```
 
-```flow
-st=>start: Start
-e=>end: End
-
-for=>operation: for
-init=>operation: int i=0
-cond=>condition: i<5
-cont=>operation: i++
-work=>operation: cout << v[i]
-isZero=>condition: v[i]==0
-continue=>operation: continue
-
-st->for->init->cond
-
-isZero(no, down)->work->cont
-isZero(yes)->continue->cont
-
-cont(left)->cond
-
-cond(yes, down)->isZero
-cond(no)->e
-```
-
 ## 4.5.3. 多重ループ
 
 ```cpp:line-numbers

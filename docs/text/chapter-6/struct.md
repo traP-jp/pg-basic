@@ -15,6 +15,8 @@ int grade;
 
 しかし、複数人分の情報を扱いたかったり、関数に渡したかったりするときにやや不便である。
 
+例として、2人のメンバーの情報が完全に一致するか（同一か）を判定するプログラムを以下に記す。
+
 ```cpp:line-numbers
 #include <string>
 #include <iostream>
@@ -50,60 +52,49 @@ int main() {
 }
 ```
 
-つらいため、やってられない。
+これはあまりに長く、2人ではなく100人、200人となったときにやってられなくなってしまう。
 
-ここで、複数の変数をまとめてひとつの値として扱える**構造体 (struct)** が登場する。（他の言語などではクラスやオブジェクトなどと呼ばれている）
+ここで、複数の変数をまとめてひとつの値として扱える**構造体 (struct)** を導入する。
+
+::: tip
+他の言語などではクラスやオブジェクトなどと呼ばれる。
+:::
 
 また、構造体に属する変数は**メンバ変数 (member variable)** と呼ばれている。
 
 ある構造体の型を持った値は、その構造体の**インスタンス (instance)** と呼ばれる。
 
-コードを見た方がわかりやすいと思うので、とりあえず見てほしい。
+構造体を用いると、コードは以下のようになる。
 
-```cpp:line-numbers
-#include <string>
-#include <iostream>
+<<<@/text/chapter-6/struct-raw.cpp{cpp:line-numbers}
 
-using namespace std;
+少し見やすくなったように感じないだろうか？
 
-// trap_memberという、3つの変数をまとめた新たな型が作られる
-struct trap_member {
-    // 普通に変数宣言するようにメンバ変数を宣言する
-    string trap_id, student_id;
-    int grade;
-};
+<<<@/text/chapter-6/struct.cpp#define{cpp:line-numbers}
 
-// trap_member型を値をひとつ渡すだけで、trap_id、student_id、
-// gradeの3つの変数を渡したことになる
-bool equals(trap_member member1, trap_member member2) {
-    // member1の中にあるtrap_idという変数を使い（アクセスし）たかったら、
-    // member1.trap_idというようにドットで区切って後ろにつける
-    return member1.trap_id == member2.trap_id
-    && member1.student_id == member2.student_id
-    && member1.grade == member2.grade;
-}
+この部分で構造体 `Member` を定義している。構造体 `Member` には以下の3つのメンバー変数がある。
 
-int main() {
-    // trap_memberのインスタンスの作り方には色々あるが、
-    // 変数宣言しつつ作りたいときは、波カッコを使うのがひとつの一般的な方法である
-    trap_member zer0star{"zer0-star", "22BXXXXX", 2};
-    // このように書くと、以下のように3つ変数を宣言したのと同じような意味になる
-    // string zer0star_trap_id = "zer0-star";
-    // string zer0star_student_id = "22BXXXXX";
-    // int zer0star_grade = 2;
+- `string` 型の `trap_id`
+- `string` 型の `student_id`
+- `int` 型の `grade`
 
-    if (equals(
-    zer0star,
-    // 変数宣言せずにインスタンスを作りたいときには、
-    // カッコの代わりに波カッコを使って関数を呼び出すかのように書くことができる
-    trap_member{"hoshimiya", "99B99999", 99999}
-    )) {
-        cout << "same" << endl;
-    } else {
-        cout << "not same" << endl;
-    }
-}
-```
+宣言は以下のように対応する。
 
-なんだか仰々しいものに見えるかもしれないが、本質的には複数の変数をまとめて取り扱っているだけということを忘れないでほしい。
+<<<@/text/chapter-6/struct.cpp#declare{cpp:line-numbers}
 
+これは省略されているが、先頭から順に `trap_id = "zer0-star"`, `student_id = "22BXXXXX"`, `grade = 2` とするという宣言である。
+
+次に、構造体を使用する方を見てみよう。`equals` 関数の実装は以下のとおり。
+
+<<<@/text/chapter-6/struct.cpp#function{cpp:line-numbers}
+
+関数の引数として、 `int` 型などと同様に `Member` 型を受け取ることができる。
+`Member` 型の変数1つを渡すのは、 `trap_id` `student_id` `grade` の3変数を渡したことと同じになる。
+
+`Member` 型の各変数にアクセスするには、 `member.trap_id` のように、 `.` で変数名とメンバ変数を繋げれば良い。
+
+このようにしたあとは、以下のように構造体を使って `equals` を使用することができる。
+
+<<<@/text/chapter-6/struct.cpp#use{cpp:line-numbers}
+
+なんだか仰々しいものに見えるかもしれないが、本質的には複数の変数をまとめて取り扱っているだけである。
