@@ -36,12 +36,14 @@ title: このテキストについて
 
 ### 講師
 
-- [@Takeno_hito](https://trap.jp/author/Takeno_hito) (Twitter: [@Takeno_hito](https://twitter.com/Takeno_hito) ); Day 1, 2, 3, 5
+- [@Takeno_hito](https://trap.jp/author/Takeno_hito) (Twitter: [@Takeno_hito](https://twitter.com/Takeno_hito) ); Day 1,
+  2, 3, 5
 - [@helgev](https://trap.jp/author/helgev) (Twitter: [@helgev_](https://twitter.com/helgev_) ); Day 4
 
 ### テキスト制作・制作協力
 
-- [@Takeno_hito](https://trap.jp/author/Takeno_hito) (Twitter: [@Takeno_hito](https://twitter.com/Takeno_hito) ); Section 0~6, 8
+- [@Takeno_hito](https://trap.jp/author/Takeno_hito) (Twitter: [@Takeno_hito](https://twitter.com/Takeno_hito) );
+  Section 0~6, 8
 - [@tatyam](https://trap.jp/author/tatyam) (Twitter: [@tatyam_prime](https://twitter.com/tatyam_prime) ); 練習問題の製作
 - [@zer0-star](https://trap.jp/author/zer0-star) (Twitter: [@0x_zer0star](https://twitter.com/0x_zer0star) ); Section 7
 
@@ -83,11 +85,13 @@ TA 以外にも様々な方にお手伝い頂きました。
 traP OB である [@OrangeStar](https://trap.jp/author/OrangeStar) さんが過去に開催した講習会を参考にさせて頂きました。
 更に、練習問題に当該講習会の問題を使用することを快くご承諾いただきました。
 
-また、友人 [twitter:su8ru_](https://twitter.com/su8ru_) と [twitter:ibuki2003](https://twitter.com/ibuki2003) にもテキスト制作にご協力頂きました。
+また、友人 [twitter:su8ru_](https://twitter.com/su8ru_) と [twitter:ibuki2003](https://twitter.com/ibuki2003)
+にもテキスト制作にご協力頂きました。
 
 どちらも講習会を開催するにあたって必要不可欠な協力でした。この場を借りて御礼申し上げます。
 
 ## 関連リンク
 
-- traP ホームページ
-- Webエンジニアになろう講習会 テキスト
+- 開催報告ブログ記事：公開予定
+- [traP ホームページ](https://trap.jp)
+- [Webエンジニアになろう講習会 テキスト](https://traptitech.github.io/naro-text/)
