@@ -32,7 +32,7 @@ export default withMermaid({
         },
         nav: [
             {text: 'ホーム', link: '/'},
-            {text: 'テキスト', link: '/text/section-0/'}
+            {text: 'テキスト', link: '/text/chapter-0/'}
         ],
 
         sidebar: [
