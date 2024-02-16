@@ -66,6 +66,7 @@ export default withMermaid({
                     {text: 'はじめてのプログラミング解説', link: '/text/chapter-2/hello-world'},
                     {text: 'int 変数', link: '/text/chapter-2/variables'},
                     {text: '変数の入力', link: '/text/chapter-2/input'},
+                    {text: '練習問題', link: '/text/chapter-2/practice/index.md'},
                 ]
             },
             {
