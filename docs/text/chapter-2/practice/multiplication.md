@@ -10,9 +10,6 @@ cin >> first_value >> second_value;
 
 :::
 
-:::spoiler Hint 2
-
-
 :::spoiler Answer
 
 ```cpp
