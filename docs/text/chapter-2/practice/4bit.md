@@ -12,6 +12,14 @@ int型では、`5 / 3`は`1`になります。
 
 :::
 
+:::spoiler Hint 3
+1桁ずつ出力してみよう。
+:::
+
+:::spoiler Hint 4
+$|\displaystyle \frac{n}{2^k}|$を2進数表記すると、$n$の2進数表記の$k+1$桁目以上を得ることができる。
+:::
+
 :::spoiler Answer
 ```cpp
 #include <iostream>
