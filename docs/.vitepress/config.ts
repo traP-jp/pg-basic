@@ -110,7 +110,12 @@ export default withMermaid({
                 ]
             },
             {text: 'VII. おわりに・おまけ', link: '/text/chapter-7/'},
-            {text: 'VIII. 発展事項 (WIP)', link: '/text/chapter-8/'},
+            {
+                text: 'VIII. 発展事項 (WIP)',
+                link: '/text/chapter-8/',
+                items: [
+                ]
+            },
             {
                 text: 'for traP Member Only',
                 items: [
