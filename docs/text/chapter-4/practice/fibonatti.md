@@ -21,4 +21,22 @@ int main() {
 }
 ```
 
+別解: `.push_back`を用いることで、値を配列に格納することができます。
+
+```cpp
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> fibonatti_sequence = {0, 1};
+    for (int i = 2; i < n; i++) {
+        int next = fibonatti_sequence[i-1] + fibonatti_sequence[i-2];
+        fibonatti_sequence.push_back(next);
+    }
+    cout << fibonatti_sequence.back() << endl;
+}
+
 :::
