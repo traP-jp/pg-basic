@@ -86,6 +86,7 @@ export default withMermaid({
                     {text: '配列', link: '/text/chapter-4/array'},
                     {text: '文字列 ②', link: '/text/chapter-4/string'},
                     {text: 'for ②', link: '/text/chapter-4/for-advanced'},
+                    {text: '練習問題', link: '/text/chapter-4/practice/'}
                 ]
             },
             {
