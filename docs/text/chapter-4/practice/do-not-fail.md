@@ -1,4 +1,4 @@
-# Fail a class
+# DO NOT FAIL
 点数が整数として１つずつ与えられるので、59以下なら`Failed`と出力して実行を終了しよう。
 
 ::: spoiler Answer
