@@ -7,6 +7,7 @@
 - `Bu`、ただし$i$は3の倍数でなく、$j$が5の倍数
 - `FB`、ただし$i$が3の倍数で、$j$が5の倍数
 
+:::spoiler Answer
 ```cpp
 #include <string>
 #include <iostream>
@@ -39,3 +40,4 @@ int main() {
     cout << flush;
 }
 ```
+:::
