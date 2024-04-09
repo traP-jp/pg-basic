@@ -75,6 +75,7 @@ export default withMermaid({
                 items: [
                     {text: '条件分岐', link: '/text/chapter-3/if-else'},
                     {text: '型', link: '/text/chapter-3/type'},
+                    {text: '練習問題', link: '/text/chapter-3/practice/'},
                 ]
             },
             {
