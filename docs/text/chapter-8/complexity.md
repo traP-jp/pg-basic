@@ -2,7 +2,7 @@
 ## ランダウの記号
 [5.5. 実行時間](../chapter-5/exec-time.md)では再帰関数の実行速度を大まかに見積もったが、ランダウの記号という考え方を使うことでより良く概算することができる。ランダウの記号は以下のように定義される。
 
-$\exists C \forall, n \in \mathbb{N}_{+}, \frac{f(x)}{g(x)} \leq C$
+$\exists C \forall, n \in \mathbb{N}_{+}, \frac{f(n)}{g(n)} \leq C$
 
 であるとき、$f(x) = O(g(x))$と書き、「f(x)はg(x)のオーダーである」という。
 
