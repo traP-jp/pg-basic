@@ -1,3 +1,4 @@
+import { link } from 'fs';
 import {defineConfig} from 'vitepress'
 
 const containerMdExtend = require('./detail-plugin.js');
@@ -111,7 +112,13 @@ export default withMermaid({
                 ]
             },
             {text: 'VII. おわりに・おまけ', link: '/text/chapter-7/'},
-            {text: 'VIII. 発展事項 (WIP)', link: '/text/chapter-8/'},
+            {
+                text: 'VIII. 発展事項 (WIP)',
+                link: '/text/chapter-8/',
+                items: [
+                    {text: '計算量とオーダー', link: '/text/chapter-8/complexity'},
+                ]
+            },
             {
                 text: 'for traP Member Only',
                 items: [
