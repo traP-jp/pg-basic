@@ -100,6 +100,7 @@ export default withMermaid({
                     {text: '再帰関数', link: '/text/chapter-5/recursive-function'},
                     {text: '実行時間', link: '/text/chapter-5/exec-time'},
                     {text: '参照渡し', link: '/text/chapter-5/call-by-ref'},
+                    {text: '練習問題', link: '/text/chapter-5/practice/'}
                 ]
             },
             {
