@@ -109,6 +109,7 @@ export default withMermaid({
                     {text: '構造体', link: '/text/chapter-6/struct'},
                     {text: 'メソッド', link: '/text/chapter-6/method'},
                     {text: 'カプセル化', link: '/text/chapter-6/capsule'},
+                    {text: '練習問題', link: '/text/chapter-6/practice/'},
                 ]
             },
             {text: 'VII. おわりに・おまけ', link: '/text/chapter-7/'},
