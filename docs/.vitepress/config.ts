@@ -123,7 +123,18 @@ export default withMermaid({
                 text: 'for traP Member Only',
                 items: [
                     { text: '講習会 Wiki ページ', link: 'https://wiki.trap.jp/Event/welcome/23/lecture/pg-basic' },
-                    { text: '練習問題', link: 'https://md.trap.jp/IE4NUAc_RR-USMIXlevsgA' },
+                    // { text: '練習問題', link: 'https://md.trap.jp/IE4NUAc_RR-USMIXlevsgA' },
+                ]
+            },
+            {
+                text: 'TA 向けテキストガイド',
+                items: [
+                    { text: 'Chapter 0', link: '/guide/chapter-0' },
+                    { text: 'Chapter 1', link: '/guide/chapter-1' },
+                    { text: 'Chapter 2-3', link: '/guide/chapter-2-3' },
+                    // { text: 'Chapter 4', link: '/guide/chapter-4' },
+                    // { text: 'Chapter 5', link: '/guide/chapter-5' },
+                    // { text: 'Chapter 6', link: '/guide/chapter-6' },
                 ]
             }
         ],
