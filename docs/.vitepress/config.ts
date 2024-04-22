@@ -1,9 +1,10 @@
-import {defineConfig} from 'vitepress'
+import { link } from 'fs';
+import { defineConfig } from 'vitepress'
 
 const containerMdExtend = require('./detail-plugin.js');
 const markdowinItCharts = require('markdown-it-charts');
 //import markdownItMermaid from 'markdown-it-mermaid'
-import {withMermaid} from "vitepress-plugin-mermaid";
+import { withMermaid } from "vitepress-plugin-mermaid";
 
 
 // https://vitepress.dev/reference/site-config
@@ -14,7 +15,7 @@ export default withMermaid({
     cleanUrls: false,
     markdown: {
 
-//        lineNumbers: true,
+        //        lineNumbers: true,
         config: (md) => {
             md.use(
                 require('markdown-it-container'),
@@ -31,92 +32,110 @@ export default withMermaid({
             provider: 'local'
         },
         nav: [
-            {text: 'ホーム', link: '/'},
-            {text: 'テキスト', link: '/text/chapter-0/'}
+            { text: 'ホーム', link: '/' },
+            { text: 'テキスト', link: '/text/chapter-0/' }
         ],
 
         sidebar: [
             {
                 text: 'About',
                 items: [
-                    {text: 'このテキストについて', link: '/about'}
+                    { text: 'このテキストについて', link: '/about' }
                 ]
             },
             {
                 text: '0. はじめに',
                 link: '/text/chapter-0/',
                 items: [
-                    {text: '環境構築 - Mac', link: '/text/chapter-0/enviroment/mac'},
-                    {text: '環境構築 - Windows', link: '/text/chapter-0/enviroment/windows'},
-                    {text: '講習会ガイダンス', link: '/text/chapter-0/guidance'}
+                    { text: '環境構築 - Mac', link: '/text/chapter-0/enviroment/mac' },
+                    { text: '環境構築 - Windows', link: '/text/chapter-0/enviroment/windows' },
+                    { text: '講習会ガイダンス', link: '/text/chapter-0/guidance' }
                 ]
             },
             {
                 text: 'I. はじめてのプログラミング',
                 link: '/text/chapter-1/',
                 items: [
-                    {text: 'コンパイルとOS', link: '/text/chapter-1/compile-os'},
-                    {text: 'ターミナルの扱い', link: '/text/chapter-1/terminal'},
+                    { text: 'コンパイルとOS', link: '/text/chapter-1/compile-os' },
+                    { text: 'ターミナルの扱い', link: '/text/chapter-1/terminal' },
                 ],
             },
             {
                 text: 'II. 変数と入出力',
                 link: '/text/chapter-2/',
                 items: [
-                    {text: 'はじめてのプログラミング解説', link: '/text/chapter-2/hello-world'},
-                    {text: 'int 変数', link: '/text/chapter-2/variables'},
-                    {text: '変数の入力', link: '/text/chapter-2/input'},
-                    {text: '練習問題', link: '/text/chapter-2/practice/'},
+                    { text: 'はじめてのプログラミング解説', link: '/text/chapter-2/hello-world' },
+                    { text: 'int 変数', link: '/text/chapter-2/variables' },
+                    { text: '変数の入力', link: '/text/chapter-2/input' },
+                    { text: '練習問題', link: '/text/chapter-2/practice/' },
                 ]
             },
             {
                 text: 'III. 演算・計算',
                 link: '/text/chapter-3/',
                 items: [
-                    {text: '条件分岐', link: '/text/chapter-3/if-else'},
-                    {text: '型', link: '/text/chapter-3/type'},
+                    { text: '条件分岐', link: '/text/chapter-3/if-else' },
+                    { text: '型', link: '/text/chapter-3/type' },
+                    { text: '練習問題', link: '/text/chapter-3/practice/' },
                 ]
             },
             {
                 text: 'IV. 繰り返し処理',
                 link: '/text/chapter-4/',
                 items: [
-                    {text: 'for ①', link: '/text/chapter-4/for-basic'},
-                    {text: 'while', link: '/text/chapter-4/while'},
-                    {text: '配列', link: '/text/chapter-4/array'},
-                    {text: '文字列 ②', link: '/text/chapter-4/string'},
-                    {text: 'for ②', link: '/text/chapter-4/for-advanced'},
-                    {text: '練習問題', link: '/text/chapter-4/practice/'}
+                    { text: 'for ①', link: '/text/chapter-4/for-basic' },
+                    { text: 'while', link: '/text/chapter-4/while' },
+                    { text: '配列', link: '/text/chapter-4/array' },
+                    { text: '文字列 ②', link: '/text/chapter-4/string' },
+                    { text: 'for ②', link: '/text/chapter-4/for-advanced' },
+                    { text: '練習問題', link: '/text/chapter-4/practice/' },
                 ]
             },
             {
                 text: 'V. コードの簡易化① - Function',
                 link: '/text/chapter-5/',
                 items: [
-                    {text: '関数とは', link: '/text/chapter-5/about-function'},
-                    {text: '引数', link: '/text/chapter-5/argument'},
-                    {text: '返り値', link: '/text/chapter-5/return-value'},
-                    {text: '再帰関数', link: '/text/chapter-5/recursive-function'},
-                    {text: '実行時間', link: '/text/chapter-5/exec-time'},
-                    {text: '参照渡し', link: '/text/chapter-5/call-by-ref'},
+                    { text: '関数とは', link: '/text/chapter-5/about-function' },
+                    { text: '引数', link: '/text/chapter-5/argument' },
+                    { text: '返り値', link: '/text/chapter-5/return-value' },
+                    { text: '参照渡し', link: '/text/chapter-5/call-by-ref' },
                 ]
             },
             {
                 text: 'VI. コードの簡易化② - Struct',
                 link: '/text/chapter-6/',
                 items: [
-                    {text: '構造体', link: '/text/chapter-6/struct'},
-                    {text: 'メソッド', link: '/text/chapter-6/method'},
-                    {text: 'カプセル化', link: '/text/chapter-6/capsule'},
+                    { text: '構造体', link: '/text/chapter-6/struct' },
+                    { text: 'メソッド', link: '/text/chapter-6/method' },
                 ]
             },
-            {text: 'VII. おわりに・おまけ', link: '/text/chapter-7/'},
-            {text: 'VIII. 発展事項 (WIP)', link: '/text/chapter-8/'},
+            { text: 'VII. おわりに・おまけ', link: '/text/chapter-7/' },
+            {
+                text: 'VIII. 発展事項 (WIP)',
+                link: '/text/chapter-8/',
+                items: [
+                    { text: '計算量とオーダー', link: '/text/chapter-8/complexity' },
+                    { text: '再帰関数', link: '/text/chapter-8/recursive-function' },
+                    { text: '実行時間', link: '/text/chapter-8/exec-time' },
+                    { text: 'カプセル化', link: '/text/chapter-8/capsule' },
+                ],
+            },
             {
                 text: 'for traP Member Only',
                 items: [
-                    {text: '講習会 Wiki ページ', link: 'https://wiki.trap.jp/Event/welcome/23/lecture/pg-basic'},
-                    {text: '練習問題', link: 'https://md.trap.jp/IE4NUAc_RR-USMIXlevsgA'},
+                    { text: '講習会 Wiki ページ', link: 'https://wiki.trap.jp/Event/welcome/23/lecture/pg-basic' },
+                    // { text: '練習問題', link: 'https://md.trap.jp/IE4NUAc_RR-USMIXlevsgA' },
+                ]
+            },
+            {
+                text: 'TA 向けテキストガイド',
+                items: [
+                    { text: 'Chapter 0', link: '/guide/chapter-0' },
+                    { text: 'Chapter 1', link: '/guide/chapter-1' },
+                    { text: 'Chapter 2-3', link: '/guide/chapter-2-3' },
+                    // { text: 'Chapter 4', link: '/guide/chapter-4' },
+                    // { text: 'Chapter 5', link: '/guide/chapter-5' },
+                    // { text: 'Chapter 6', link: '/guide/chapter-6' },
                 ]
             }
         ],
