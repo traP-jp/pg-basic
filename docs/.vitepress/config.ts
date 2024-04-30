@@ -58,6 +58,7 @@ export default withMermaid({
                 items: [
                     { text: 'コンパイルとOS', link: '/text/chapter-1/compile-os' },
                     { text: 'ターミナルの扱い', link: '/text/chapter-1/terminal' },
+                    { text: '練習問題', link: '/text/chapter-1/practice/' },
                 ],
             },
             {
