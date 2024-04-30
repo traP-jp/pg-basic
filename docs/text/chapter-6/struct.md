@@ -23,7 +23,7 @@ int grade;
 
 using namespace std;
 
-// 引数が長すぎてナーガになってしまった......
+// 引数が長すぎる……
 bool equals(
 string trap_id1, string student_id1, int grade1,
 string trap_id2, string student_id2, int grade2
@@ -34,7 +34,7 @@ string trap_id2, string student_id2, int grade2
 }
 
 int main() {
-    // 宣言が長すぎて長瀞さんになってしまった......
+    // 宣言が長すぎる……
     string trap_id1, student_id1, trap_id2, student_id2;
     int grade1, grade2;
 
@@ -52,17 +52,21 @@ int main() {
 }
 ```
 
-これはあまりに長く、2人ではなく100人、200人となったときにやってられなくなってしまう。
+これはあまりに長い。
+配列を使えば宣言はそれぞれの変数でまとめることはできるが、できれば学生情報は一つの変数にまとめたい。
 
-ここで、複数の変数をまとめてひとつの値として扱える**構造体 (struct)** を導入する。
+ここで、複数の変数をまとめてひとつの値として扱える**構造体 (struct)** を導入し、構造体の **型** を定義する。
 
 ::: tip
 他の言語などではクラスやオブジェクトなどと呼ばれる。
 :::
 
-また、構造体に属する変数は**メンバ変数 (member variable)** と呼ばれている。
+::: tip 用語
 
-ある構造体の型を持った値は、その構造体の**インスタンス (instance)** と呼ばれる。
+- 構造体に属する変数は**メンバ変数 (member variable)** と呼ばれている。
+- ある構造体の型を持った値は、その構造体の**インスタンス (instance)** と呼ばれる。
+
+:::
 
 構造体を用いると、コードは以下のようになる。
 
@@ -72,7 +76,7 @@ int main() {
 
 <<<@/text/chapter-6/struct.cpp#define{cpp:line-numbers}
 
-この部分で構造体 `Member` を定義している。構造体 `Member` には以下の3つのメンバー変数がある。
+この部分で構造体 `Member` を定義している。構造体 `Member` は以下の3つのメンバ変数を持つ。
 
 - `string` 型の `trap_id`
 - `string` 型の `student_id`
@@ -97,4 +101,4 @@ int main() {
 
 <<<@/text/chapter-6/struct.cpp#use{cpp:line-numbers}
 
-なんだか仰々しいものに見えるかもしれないが、本質的には複数の変数をまとめて取り扱っているだけである。
+なんだか仰々しいものに見えるかもしれないが、本質的には複数の変数をまとめて、わかりやすくなるように取り扱っているだけである。

@@ -17,7 +17,7 @@ int main() {
 
   cout << (score >= 60) << endl;
   if (score >= 60) {
-	cout << "合格です" << endl;
+    cout << "合格です" << endl;
   } else {
     cout << "不合格です" << endl;
   }
@@ -184,4 +184,3 @@ different
 
 [**\[講習会ページに戻る\]**](https://wiki.trap.jp/Event/welcome/23/lecture/pg-basic)
 :::
-
