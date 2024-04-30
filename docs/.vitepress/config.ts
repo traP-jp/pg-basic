@@ -5,6 +5,7 @@ const containerMdExtend = require('./detail-plugin.js');
 const markdowinItCharts = require('markdown-it-charts');
 //import markdownItMermaid from 'markdown-it-mermaid'
 import { withMermaid } from "vitepress-plugin-mermaid";
+import { head } from './ga-plugin';
 
 
 // https://vitepress.dev/reference/site-config
@@ -138,6 +139,9 @@ export default withMermaid({
                     // { text: 'Chapter 5', link: '/guide/chapter-5' },
                     // { text: 'Chapter 6', link: '/guide/chapter-6' },
                 ]
+            },
+            { 
+                text: 'プライバシーポリシー', link: '/privacy-policy'
             }
         ],
 
@@ -149,5 +153,19 @@ export default withMermaid({
                 link: 'https://trap.jp'
             }
         ]
-    }
+    },
+    head: [
+        [
+            'script',
+            {
+                async: true,
+                src: 'https://www.googletagmanager.com/gtag/js?id=G-977V87X2CQ',
+            },
+        ],
+        [
+            'script',
+            {},
+            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-977V87X2CQ');",
+        ],
+    ],
 })
