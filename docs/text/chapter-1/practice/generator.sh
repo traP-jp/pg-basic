@@ -6,10 +6,12 @@ generate_folder_name() {
     echo "$folder_name"
 }
 
-current_directory="$(pwd)"
+run_directory="$(pwd)/hello-shell"
 
 # Create 20 folders
 for ((i=1; i<=20; i++)); do
+    cd "$run_directory"
+
     # Generate folder name
     folder_name=$(generate_folder_name)
     # Create folder
@@ -21,7 +23,5 @@ for ((i=1; i<=20; i++)); do
         mkdir "$f2_name"
         echo "Created folder: $folder_name/$f2_name"
     done
-
-    cd "$run_directory"
     
 done

@@ -8,7 +8,7 @@
 
 代わりに見つけて、晩ごはんのメモを教えて下さい。
 
-## 沢山のディレクトリがあるやつを見る方法
+## 問題ファイルのダウンロード方法
 
 ::: tip
 
@@ -17,12 +17,14 @@ Windows (Ubuntu) で、↓のステップの中でエラーが出たら TA を�
 TA 向け: curl と zip のインストールが必要です。もし入ってなければ以下の手順で導入してください。
 
 ```sh
-sudo apt install zip wget -y
+sudo apt install zip curl -y
 ```
 
+:::
+
 ```sh
-mkdir hello-shell
-cd hello-shell
-wget https://pg-basic.trap.show/hello-shell.zip
+curl https://pg-basic.trap.show/hello-shell.zip -o hello-shell.zip
 unzip hello-shell.zip
+rm hello-shell.zip
+cd hello-shell/
 ```

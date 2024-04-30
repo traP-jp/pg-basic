@@ -59,7 +59,7 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 1. WSL上で `sudo apt update`
 
 3. パスワードを求められるので、WSLで設定したパスワードを入力
-4. WSL上で `sudo apt install clang -y` を実行する
+4. WSL上で `sudo apt install clang zip curl -y` を実行する
 5. `clang --version` で clang のバージョンが表示されれば成功
 6. 11. traQ の tasks チャンネルで :cpp: を押す
 
