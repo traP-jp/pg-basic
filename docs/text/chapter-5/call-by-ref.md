@@ -66,7 +66,7 @@ int triple(int x) {
 
 int main() {
     int x = 4;
-    triple(4);
+    triple(x);
 
     cout << x << endl;
 }
