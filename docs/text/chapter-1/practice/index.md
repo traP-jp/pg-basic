@@ -4,5 +4,5 @@
 おまけ問題たちです 解けなくても OK
 :::
 
-- [はじめてのプログラミング vim 編](vim-test)
+- [はじめてのプログラミング nano 編](nano-test)
 - [Hello shell](hello-shell)
