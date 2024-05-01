@@ -62,28 +62,40 @@ int main() {
 ### 2.1.1.1. エスケープシーケンス
 
 出力に `"` を含めたい場合、 `cout << "Hello, "traP"!" << endl;` と記述してもコンパイルができない。これは `"Hello, "` で文字列が区切られてしまっているためである。
-これを回避するために、(Windows: ¥ キー, Mac: ¥ を推しながら Option (⌥) キー) `\` という文字を使って `\"` と書くことで、 `"` を出力することができる。
+これを回避するために、(Windows: ¥ キー, Mac: Option (⌥) キーを推しながら ¥ キー) `\` という文字を使って `\"` と書くことで、 `"` を出力することができる。
 このように `\` を使った文字の出力の仕方をエスケープシーケンスと呼ぶ。
 
 ```cpp:no-line-numbers
   cout << "Hello, \"traP\"!" << endl; // output: Hello, "traP"!
 ```
 
-他にも `Hello, \n traP!` と `\n` と書くと、`"Hello, "`と`"traP!"` の間に改行が入り、出力は以下のようになる。
+他にも以下 `Hello, \n traP!` のように文字列中に `\n` と書くと改行され、この場合は `"Hello, "`と`"traP!"` の間に改行が入る。
 
 ``` cpp:no-line-numbers
   cout << "Hello, \ntraP!" << endl;
-  /*output:
-    Hello,
-    traP!
-  */
+```
+
+```txt
+[output]
+Hello,
+traP!
 ```
 
 また、`\`を文字列内で使いたい場合は、`\\` と書く。
 
 ```cpp:no-line-numbers
-  cout << "\\\\ Hello, traP!! //" << endl; // output: \\ Hello, traP!! //
+  cout << "\\\\ Hello, traP!! //" << endl;
 ```
+
+```txt
+[output]
+\\ Hello, traP!! //
+```
+
+::: tip
+文字列中では `//` を書いてもコメントアウトされない。
+:::
+
 
 ## 2.1.2. セミコロン
 
