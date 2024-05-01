@@ -1,4 +1,4 @@
 # 練習問題 - Chapter 1
 
-- [はじめてのプログラミング vim 編](vim-test)
+- [はじめてのプログラミング nano 編](nano-test)
 - [Hello shell](hello-shell)
