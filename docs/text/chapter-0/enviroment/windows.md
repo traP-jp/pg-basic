@@ -72,7 +72,7 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 3. `Japanese` と入力し、 `Japanese Language Pack for Visual Studio Code` をインストール。
 ![](https://md.trap.jp/uploads/upload_b54bb733b3bf68010e033d30f2bf57c2.png)
 
-4. VSCode の右下「Install and Restart」を押してインストール。
+4. VSCode の右下「Change Language and Restart」を押してインストール。
 
 5. もう一度、 `Ctrl` + `Shift` + `X` を押す
 

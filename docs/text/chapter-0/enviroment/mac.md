@@ -44,7 +44,7 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 ![](https://md.trap.jp/uploads/upload_8a51ad57ec7b6d396cb610c9bbb17040.png)
 
 
-6. `⌘+Shift+X` を押して、出てきた画面に `Japanese` と入力。 `Japanese Language Pack for Visual Studio Code` をインストールする。インストール完了後、右下の `Install and Restart` を押して VSCode を再起動する。
+6. `⌘+Shift+X` を押して、出てきた画面に `Japanese` と入力。 `Japanese Language Pack for Visual Studio Code` をインストールする。インストール完了後、右下の `Change Language and Restart` を押して VSCode を再起動する。
 ![](https://md.trap.jp/uploads/upload_6c5cfaf6aadcc679382c966d4bccb753.png)
 
 5. 日本語でVSCode が表示されるようになったら :vscode: スタンプをつける
