@@ -69,7 +69,21 @@ int main() {
   cout << "Hello, \"traP\"!" << endl; // output: Hello, "traP"!
 ```
 
-他にも `Hello, \n traP!` と `\n` と書くと
+他にも `Hello, \n traP!` と `\n` と書くと、`"Hello, "`と`"traP!"` の間に改行が入り、出力は以下のようになる。
+
+``` cpp:no-line-numbers
+  cout << "Hello, \ntraP!" << endl;
+  /*output:
+    Hello,
+    traP!
+  */
+```
+
+また、`\`を文字列内で使いたい場合は、`\\` と書く。
+
+```cpp:no-line-numbers
+  cout << "\\\\ Hello, traP!! //" << endl; // output: \\ Hello, traP!! //
+```
 
 ## 2.1.2. セミコロン
 
