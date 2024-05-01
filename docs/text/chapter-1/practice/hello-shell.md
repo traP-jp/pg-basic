@@ -10,6 +10,8 @@
 
 そういえば `ls` ってコマンドでファイル一覧を見れた気がするけど、実行してみても全く見当が付きません。 `find` コマンドを使わないと難しいなぁ……。
 
+それと、見つけたファイルは `cat [FILE]` で開けるそうです。
+
 ## 問題ファイルのダウンロード方法
 
 ```sh
@@ -28,6 +30,44 @@ TA 向け: curl と zip のインストールが必要です。もし入って�
 ```sh
 sudo apt install zip curl -y
 ```
+
+:::
+
+## 今いるフォルダを Finder / エクスプローラーで開いてみる方法
+
+### Mac
+
+```sh
+open .
+```
+
+### Windows
+
+```sh
+explorer.exe .
+```
+
+`ls` を実行したときと同じ場所が開かれているはず！
+
+## 試しにファイルを開いてみる
+
+`ls` を実行したときに `index.txt` があったはず。以下のコマンドで `index.txt` の中身を見てみましょう。
+
+```sh
+cat index.txt
+```
+
+## いざ実践
+
+この状態から目標のファイルを探してみましょう。
+
+::: tip おさらい コマンドいろいろ
+
+- `pwd` : 現在の自分の場所 (**P**rint **W**orking **D**irectory)
+- `ls` : 今いるディレクトリにあるファイル (**L**ist **S**egments)
+- `cd <...>` : ディレクトリを移動する (**C**hange **D**irectory)
+- `cd ../` 一つ親のディレクトリに移動する (`/home/trap` なら `/home` に移動)
+- `mkdir <...>` : ディレクトリを作成する (**M**a**k**e **Dir**ectory)
 
 :::
 
@@ -50,12 +90,12 @@ sudo apt install zip curl -y
 ::: spoiler hint 3
 
 - `find . -name '*.txt'` でファイルを見つけることができます。
-- `cat 6db1b5a2e7/08dc869896/memo.txt` と入力してみましょう。 `TAB` キーを押すと、候補を選んでくれます。
+- `cat [FILE]` でファイルを開くことができます。 `TAB` キーを押すと、候補を選んでくれます。
 
 :::
 
 ::: spoiler answer
 
-<https://pg-basic.trap.show/text/chapter-1/practice/t4k3n0h1to-d1nn3r.html> にあるらしいです。
+`cat 6db1b5a2e7/08dc869896/memo.txt` でファイルを開いてみましょう。
 
 :::
