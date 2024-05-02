@@ -25,6 +25,32 @@ int main() {
 }
 ```
 
+::: spoiler Hint
+下のコードの`// ここにフィボナッチ数列の計算を実装しよう`の部分を実装してみよう。
+```cpp
+#include <iostream>
+using namespace std;
+
+int fibonatti(int index) {
+    int first = 1, second = 1;
+    // ここにフィボナッチ数列の計算を実装しよう
+    return second;
+}
+
+int main() {
+    int n;
+    cin >> n;
+    for (i = 0; i < n; i++) {
+        for (j = 0; j < n; j++) {
+            int fib_ij = fibonatti(i*j);
+            cout << fib_ij << " ";
+        }
+        cout << endl;
+    }
+}
+```
+:::
+
 ::: spoiler Answer
 
 ```cpp
