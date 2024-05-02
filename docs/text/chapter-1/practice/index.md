@@ -4,5 +4,5 @@
 おまけ問題たちです 解けなくても OK
 :::
 
-- [はじめてのプログラミング nano 編](nano-test)
-- [Hello shell](hello-shell)
+- [1-B1. はじめてのプログラミング nano 編](nano-test)
+- [1-C1. Hello shell](hello-shell)

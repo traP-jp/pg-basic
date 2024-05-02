@@ -1,4 +1,4 @@
-# 2-xx. 4bit
+# 2-B1. 4bit
 
 入力から$0 <= n < 16$の整数値を受け取り、2進数で表記しよう。
 
@@ -17,7 +17,7 @@ int型では、`5 / 3`は`1`になる。
 :::
 
 :::spoiler Hint 4
-$|\displaystyle \frac{n}{2^k}|$を2進数表記すると、$n$の2進数表記の$k+1$桁目以上を得ることができる。
+$\displaystyle\left\lfloor\frac{n}{2^k}\right\rfloor$を2進数表記すると、$n$の2進数表記の$k+1$桁目以上を得ることができる。
 :::
 
 :::spoiler Answer
