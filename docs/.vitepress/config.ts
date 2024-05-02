@@ -59,7 +59,15 @@ export default withMermaid({
                 items: [
                     { text: 'コンパイルとOS', link: '/text/chapter-1/compile-os' },
                     { text: 'ターミナルの扱い', link: '/text/chapter-1/terminal' },
-                    { text: '練習問題', link: '/text/chapter-1/practice/' },
+                    { 
+                        text: '練習問題', 
+                        link: '/text/chapter-1/practice/',
+                        collapsed: true,
+                        items: [
+                            { text: '1-B1. はじめてのプログラミング nano 編', link: '/text/chapter-1/practice/nano-test' },
+                            { text: '1-C1. Hello shell', link: '/text/chapter-1/practice/hello-shell' },
+                        ],
+                    },
                 ],
             },
             {
@@ -69,7 +77,15 @@ export default withMermaid({
                     { text: 'はじめてのプログラミング解説', link: '/text/chapter-2/hello-world' },
                     { text: 'int 変数', link: '/text/chapter-2/variables' },
                     { text: '変数の入力', link: '/text/chapter-2/input' },
-                    { text: '練習問題', link: '/text/chapter-2/practice/' },
+                    { 
+                        text: '練習問題',
+                        link: '/text/chapter-2/practice/',
+                        collapsed: true,
+                        items: [
+                            { text: '2-A1. Multiplication', link: '/text/chapter-2/practice/multiplication' },
+                            { text: '2-B1. 4bit', link: '/text/chapter-2/practice/4bit' },
+                        ],
+                    },
                 ]
             },
             {
@@ -78,7 +94,17 @@ export default withMermaid({
                 items: [
                     { text: '条件分岐', link: '/text/chapter-3/if-else' },
                     { text: '型', link: '/text/chapter-3/type' },
-                    { text: '練習問題', link: '/text/chapter-3/practice/' },
+                    { 
+                        text: '練習問題',
+                        link: '/text/chapter-3/practice/',
+                        collapsed: true,
+                        items: [
+                            { text: '3-A1. Echo', link: '/text/chapter-3/practice/echo' },
+                            { text: '3-A2. Fraction', link: '/text/chapter-3/practice/fraction' },
+                            { text: '3-B1. int128', link: '/text/chapter-3/practice/int128' },
+                            { text: '3-B2. De Morgan\'s laws', link: '/text/chapter-3/practice/de-morgans-laws' },
+                        ]  
+                    },
                 ]
             },
             {
