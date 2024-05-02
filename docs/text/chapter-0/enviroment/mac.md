@@ -44,7 +44,7 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 ![](https://md.trap.jp/uploads/upload_8a51ad57ec7b6d396cb610c9bbb17040.png)
 
 
-6. `⌘+Shift+X` を押して、出てきた画面に `Japanese` と入力。 `Japanese Language Pack for Visual Studio Code` をインストールする。インストール完了後、右下の `Install and Restart` を押して VSCode を再起動する。
+6. `⌘+Shift+X` を押して、出てきた画面に `Japanese` と入力。 `Japanese Language Pack for Visual Studio Code` をインストールする。インストール完了後、右下の `Change Language and Restart` を押して VSCode を再起動する。
 ![](https://md.trap.jp/uploads/upload_6c5cfaf6aadcc679382c966d4bccb753.png)
 
 5. 日本語でVSCode が表示されるようになったら :vscode: スタンプをつける
@@ -60,15 +60,7 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 4. `⌘` + `,` で設定を開く。下記画像の赤丸で囲んだ部分を押して `settings.json` を開く。
 ![](https://md.trap.jp/uploads/upload_bbdd65cb92c5c57bb38f797676aaea8f.png)
 
-5. `"cpp": ` で始まる行を探して、`g++` を `clang++` に置き換える。
-
-```diff
-- "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-+ "cpp": "cd $dir && clang++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-```
-
-::: tip
-なかった場合は、一番最後の行の1つ前の行（ `}` の前！）に次のコードを追加してください。その前の行に `,` がなかったら追加してください！
+5. もし`"cpp": `で始まる行がなければ、一番最後の行の1つ前の行（ `}` の前！）に次のコードを追加する。その前の行に `,` がなかったら追加する。
 
 ```
 "code-runner.executorMap": {
@@ -77,6 +69,15 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 ```
 
 ![](https://md.trap.jp/uploads/upload_6123c7ce669910790a06b98cc664b827.png)
+
+::: tip
+
+もしすでに`"cpp": ` で始まる行があった場合、以下のように`g++` を `clang++` に置き換える。
+
+```diff
+- "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
++ "cpp": "cd $dir && clang++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+```
 
 :::
 

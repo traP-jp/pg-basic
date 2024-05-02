@@ -1,4 +1,5 @@
-# De Morgan's laws
+# 3-B2. De Morgan's laws
+
 `bool`型の値`P`、`Q`が与えられるので、ド・モルガンの法則が成り立つことを実際に確かめよう。
 
 ::: tip ド・モルガンの法則

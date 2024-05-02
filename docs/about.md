@@ -22,9 +22,9 @@ title: このテキストについて
 
 ## traP について
 
-東京工業大学デジタル創作同好会 traP は、2023年5月現在約 570 人が在籍する東京工業大学の中で随一の規模を誇る創作・プログラミングの総合サークルです。
+東京工業大学デジタル創作同好会 traP は、2024年4月現在 600 人以上が在籍する東京工業大学の中で随一の規模を誇る創作・プログラミングの総合サークルです。
 
-「アルゴリズム班」「CTF班」「ゲーム班」「グラフィック班」「サウンド班」「SysAd 班」の6班が存在し、各々好きな分野で活動しています。
+「アルゴリズム班」「CTF班」「ゲーム班」「グラフィック班」「サウンド班」「SysAd 班」「Kaggle 班」の 7 班が存在し、各々好きな分野で活動しています。
 
 弊サークルについての詳細は https://trap.jp/about/ をご覧ください。
 
@@ -36,9 +36,52 @@ title: このテキストについて
 
 ### 講師
 
-- [@Takeno_hito](https://trap.jp/author/Takeno_hito) (Twitter: [@Takeno_hito](https://twitter.com/Takeno_hito) ); Day 1,
-  2, 3, 5
-- [@helgev](https://trap.jp/author/helgev) (Twitter: [@helgev_](https://twitter.com/helgev_) ); Day 4
+- @Takeno_hito
+- @Pugma
+- @comavius
+- @ogu_kazemiya
+
+### テキスト製作・制作協力
+
+- [@Takeno_hito](https://trap.jp/author/Takeno_hito) (Twitter: [@Takeno_hito](https://twitter.com/Takeno_hito) )
+- [@tatyam](https://trap.jp/author/tatyam) (Twitter: [@tatyam_prime](https://twitter.com/tatyam_prime) ); 練習問題の製作
+- [@comavius](https://trap.jp/author/comavius) (Twitter: [@comavius](https://twitter.com/comavius)); 練習問題の製作
+- [@zer0-star](https://trap.jp/author/zer0-star) (Twitter: [@0x_zer0star](https://twitter.com/0x_zer0star) ); Section 7
+- その他 traP 内 Contributor の皆様
+
+### TA 協力
+
+- @inutamago_dogegg
+- @Pina641
+- @ramdos
+- @cp20
+- @s9
+- @H1rono_K
+- @Pugma
+- @Alt--er
+- @mehm8128
+- @helgev
+- @o_ER4
+- @Hueter
+- @comavius
+- @Dye
+- @ogu_kazemiya
+- @soumen
+- @sohokro
+- @Takeno_hito
+- @pirosiki
+- @tax_free
+- @Sotatsu
+- @Qro
+- @masky5859
+- @zer0-star
+
+::: spoiler 2023 年度講師陣
+
+### 講師
+
+- [@Takeno_hito](https://trap.jp/author/Takeno_hito) (Twitter: [@Takeno_hito](https://twitter.com/Takeno_hito) )
+- [@helgev](https://trap.jp/author/helgev) (Twitter: [@helgev_](https://twitter.com/helgev_) ); Day 4 に臨時で講師を務めて頂きました
 
 ### テキスト制作・制作協力
 
@@ -49,7 +92,7 @@ title: このテキストについて
 
 ### TA 協力
 
-各 TA の Twitter アカウントについては、各リンクからご確認ください。  
+各 TA の Twitter アカウントについては、各リンクからご確認ください。
 また、ブログをまだ投稿していない TA については 404 が表示されます。
 
 - [@oribe](https://trap.jp/author/@oribe)
@@ -80,6 +123,8 @@ title: このテキストについて
 
 TA 以外にも様々な方にお手伝い頂きました。
 
+:::
+
 ## 謝辞
 
 traP OB である [@OrangeStar](https://trap.jp/author/OrangeStar) さんが過去に開催した講習会を参考にさせて頂きました。
@@ -88,7 +133,7 @@ traP OB である [@OrangeStar](https://trap.jp/author/OrangeStar) さんが過�
 また、友人 [twitter:su8ru_](https://twitter.com/su8ru_) と [twitter:ibuki2003](https://twitter.com/ibuki2003)
 にもテキスト制作にご協力頂きました。
 
-どちらも講習会を開催するにあたって必要不可欠な協力でした。この場を借りて御礼申し上げます。
+どちらも初年度講習会を開催するにあたって必要不可欠な協力でした。この場を借りて御礼申し上げます。
 
 ## 関連リンク
 

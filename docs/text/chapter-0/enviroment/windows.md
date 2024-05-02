@@ -59,7 +59,7 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 1. WSL上で `sudo apt update`
 
 3. パスワードを求められるので、WSLで設定したパスワードを入力
-4. WSL上で `sudo apt install clang -y` を実行する
+4. WSL上で `sudo apt install clang zip curl -y` を実行する
 5. `clang --version` で clang のバージョンが表示されれば成功
 6. 11. traQ の tasks チャンネルで :cpp: を押す
 
@@ -72,7 +72,7 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 3. `Japanese` と入力し、 `Japanese Language Pack for Visual Studio Code` をインストール。
 ![](https://md.trap.jp/uploads/upload_b54bb733b3bf68010e033d30f2bf57c2.png)
 
-4. VSCode の右下「Install and Restart」を押してインストール。
+4. VSCode の右下「Change Language and Restart」を押してインストール。
 
 5. もう一度、 `Ctrl` + `Shift` + `X` を押す
 
@@ -100,15 +100,7 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 4. `Ctrl` + `,` で設定を開く。下記画像の赤丸で囲んだ部分を押して `settings.json` を開く。
 ![](https://md.trap.jp/uploads/upload_bbdd65cb92c5c57bb38f797676aaea8f.png)
 
-5. `"cpp": ` で始まる行を探して、`g++` を `clang++` に置き換える。
-
-```diff
-- "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-+ "cpp": "cd $dir && clang++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
-```
-
-::: tip
-なかった場合は、一番最後の行の1つ前の行（ `}` の前！）に次のコードを追加してください。その前の行に `,` がなかったら追加してください！
+5. もし`"cpp": `で始まる行がなければ、一番最後の行の1つ前の行（ `}` の前！）に次のコードを追加する。その前の行に `,` がなかったら追加する。
 
 ```
 "code-runner.executorMap": {
@@ -118,8 +110,16 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 
 ![](https://md.trap.jp/uploads/upload_6123c7ce669910790a06b98cc664b827.png)
 
-:::
+::: tip
 
+もしすでに`"cpp": ` で始まる行があった場合、以下のように`g++` を `clang++` に置き換える。
+
+```diff
+- "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
++ "cpp": "cd $dir && clang++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+```
+
+:::
 
 6. `"code-runner.executorMap": {` の行の前に `"code-runner.runInTerminal": true,` を書く（コピペ推奨！！）
 
