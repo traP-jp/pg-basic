@@ -84,6 +84,7 @@ export default withMermaid({
                         items: [
                             { text: '2-A1. Multiplication', link: '/text/chapter-2/practice/multiplication' },
                             { text: '2-B1. 4bit', link: '/text/chapter-2/practice/4bit' },
+                            { text: '2-B2. Sum', link: '/text/chapter-2/practice/sum' },
                         ],
                     },
                 ]
