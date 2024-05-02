@@ -6,7 +6,7 @@
 
 $\lnot(P \land Q) \Leftrightarrow \lnot P \lor \lnot Q,$
 
-$\lnot(P \lor Q) \Leftrightarrow \lnot P \lor \lnot Q$
+$\lnot(P \lor Q) \Leftrightarrow \lnot P \land \lnot Q$
 
 :::
 
