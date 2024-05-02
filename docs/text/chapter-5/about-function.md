@@ -126,9 +126,9 @@ int printn() {
     return 0;
 }
 
-int printn() {
+int main() {
     int n = 100;
-    hello();
+    printn();
     cout << n << endl;
 }
 ```
