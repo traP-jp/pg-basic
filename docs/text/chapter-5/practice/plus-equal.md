@@ -12,7 +12,7 @@ a += b;
 :::
 
 ::: spoiler Answer
-```cpp
+```cpp:line-numbers
 void compound_assigned_plus(int& lhs, int rhs) {
     lhs = lhs + rhs;
     return;

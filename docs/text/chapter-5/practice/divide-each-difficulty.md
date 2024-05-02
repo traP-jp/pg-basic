@@ -1,6 +1,6 @@
 # Divide each difficulty
 以下の$n \leq 7$を受け取って$n \times n$の行列$a_{i,j}=Fibonatti_{ij}$を出力するプログラムの、フィボナッチ数列の解を求める部分を別の関数`int fibonatti(int index);`に分離してみよう。
-```cpp
+```cpp:line-numbers
 #include <iostream>
 using namespace std;
 
@@ -27,7 +27,7 @@ int main() {
 
 ::: spoiler Hint
 下のコードの`// ここにフィボナッチ数列の計算を実装しよう`の部分を実装してみよう。
-```cpp
+```cpp:line-numbers
 #include <iostream>
 using namespace std;
 
@@ -53,7 +53,7 @@ int main() {
 
 ::: spoiler Answer
 
-```cpp
+```cpp:line-numbers
 #include <iostream>
 using namespace std;
 
