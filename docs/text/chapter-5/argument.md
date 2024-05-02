@@ -13,14 +13,14 @@ int triple(int x) {
 
 int main() {
     triple(4);
-    triple(5);
+    triple(3);
 }
 ```
 
 ```
 [output]
 12
-15
+9
 ```
 
 この関数に渡す値のことを **引数** と呼ぶ。
@@ -106,7 +106,7 @@ int triple(int x) {
 
 int main() {
     int x = 4;
-    triple(4);
+    triple(x);
 
     cout << x << endl;
 }

@@ -13,6 +13,9 @@ hero:
         - theme: alt
           text: このテキストについて
           link: /about
+        - theme: alt
+          text: プライバシーポリシー
+          link: /privacy-policy
 
 features:
     - title: 0. はじめに
