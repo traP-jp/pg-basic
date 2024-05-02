@@ -2,4 +2,3 @@
 
 - [Divide each difficulty](divide-each-difficulty)
 - [Operator+=](plus-equal)
-- [Exponentation](exponentation)
