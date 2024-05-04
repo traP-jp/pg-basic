@@ -8,6 +8,41 @@
 -   $i$ は3の倍数でなく、$j$ が5の倍数のとき、`Bu` (文字列)
 -   $i$ が3の倍数で、$j$ が5の倍数のとき、`FB` (文字列)
 
+### 出力例
+
+入力 `7 6` に対する出力の例
+
+```text
+1	2	3	4	Bu	6	
+2	4	6	8	Bu	12	
+Fi	Fi	Fi	Fi	FB	Fi	
+4	8	12	16	Bu	24	
+5	10	15	20	Bu	30	
+Fi	Fi	Fi	Fi	FB	Fi	
+7	14	21	28	Bu	42	
+```
+
+:::tip 出力の幅を揃える方法
+数字 ( $i\times j$ ) や 文字 (`Fi`, `Bu`, `FB`) を出力した後に `\t` を出力すると、数字や文字が良い感じにそろいます。
+
+例えば以下のコードで、上記の出力例と同じように出力されます。
+```cpp
+#include <string>
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "1\t2\t3\t4\tBu\t6\t" << endl;
+    cout << "2\t4\t6\t8\tBu\t12\t" << endl;
+    cout << "Fi\tFi\tFi\tFi\tFB\tFi\t" << endl;
+    cout << "4\t8\t12\t16\tBu\t24\t" << endl;
+    cout << "5\t10\t15\t20\tBu\t30\t" << endl;
+    cout << "Fi\tFi\tFi\tFi\tFB\tFi\t" << endl;
+    cout << "7\t14\t21\t28\tBu\t42\t" << endl;
+}
+```
+:::
+
 :::spoiler Answer
 ```cpp
 #include <string>
