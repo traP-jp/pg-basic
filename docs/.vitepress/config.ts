@@ -128,6 +128,7 @@ export default withMermaid({
                     { text: '引数', link: '/text/chapter-5/argument' },
                     { text: '返り値', link: '/text/chapter-5/return-value' },
                     { text: '参照渡し', link: '/text/chapter-5/call-by-ref' },
+                    {text: '練習問題', link: '/text/chapter-5/practice/'}
                 ]
             },
             {
