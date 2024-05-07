@@ -59,6 +59,15 @@ int main() {
 チョコ 100 おいしい
 安いPC 100000 たかい
 ```
+
+::: spoiler Hint
+`Item`構造体を宣言して、以下のメンバー変数とメソッドを実装しよう。
+- `price`(`int`型)
+- `name`(`string`型)
+- `spec`(`string`型)
+- `print`メソッド
+:::
+
 ::: spoiler Answer
 ```cpp:line-numbers
 #include <iostream>
