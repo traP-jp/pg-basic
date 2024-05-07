@@ -10,6 +10,10 @@ $F_{n}=F_{n-1}+F_{n-2}$をfor文で計算しよう。
 $F_{n-1}$ と $F_{n-2}$を持つ変数`latest`、`second_latest`を作り、ループの中で漸化式を満たすように更新していこう。
 ::
 
+::spoiler Hint 3
+`latest`と`second_latest`を同時に更新することはできないので、一時的な変数`next`も使おう。
+::
+
 :::spoiler Answer
 for文を使うことでフィボナッチ数列の$N$番目を求めることができる。
 ```cpp
