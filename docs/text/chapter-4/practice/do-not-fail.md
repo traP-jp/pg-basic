@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-    for (;;) {
+    while(true) {
         int score;
         cin >> score;
         if (score == -1) {
