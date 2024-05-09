@@ -25,13 +25,13 @@ using namespace std;
 
 struct Item {
     // ここを実装する
-}
+};
 
 int main() {
     vector<Item> items = {
         Item{5000, "机", "それなり"},
         ...
-    }
+    };
     
     // ここに 1番 2番を 解けるプログラムを書く
 }
