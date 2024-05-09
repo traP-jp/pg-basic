@@ -40,8 +40,8 @@ int fibonatti(int index) {
 int main() {
     int n;
     cin >> n;
-    for (i = 0; i < n; i++) {
-        for (j = 0; j < n; j++) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
             int fib_ij = fibonatti(i*j);
             cout << fib_ij << " ";
         }
@@ -59,7 +59,7 @@ using namespace std;
 
 int fibonatti(int index) {
     int first = 1, second = 1;
-    for (k = 0; k < index; k++) {
+    for (int k = 0; k < index; k++) {
         int next = first + second;
         first = second;
         second = next;
@@ -70,8 +70,8 @@ int fibonatti(int index) {
 int main() {
     int n;
     cin >> n;
-    for (i = 0; i < n; i++) {
-        for (j = 0; j < n; j++) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
             int fib_ij = fibonatti(i*j);
             cout << fib_ij << " ";
         }
