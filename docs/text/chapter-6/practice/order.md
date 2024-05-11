@@ -102,7 +102,8 @@ int main() {
     } else if (query_type == 2) {
         int price;
         cin >> price;
-        for (Item item : items) {
+        for (int i=0; i<items.size(); i++) {
+            Item item = items[i];
             if (item.price <= price) {
                 item.print();
             }
