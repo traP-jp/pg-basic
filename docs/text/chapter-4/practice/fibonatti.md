@@ -26,7 +26,7 @@ int main() {
     int n;
     cin >> n;
     int second_latest = 0, latest = 1;
-    for (int i = 2; i < n; i++) {
+    for (int i = 1; i < n; i++) {
         int next = second_latest + latest;
         second_latest = latest;
         latest = next;
@@ -46,7 +46,7 @@ int main() {
     int n;
     cin >> n;
     vector<int> fibonatti_sequence = {0, 1};
-    for (int i = 2; i < n; i++) {
+    for (int i = 1; i < n; i++) {
         int next = fibonatti_sequence[i-1] + fibonatti_sequence[i-2];
         fibonatti_sequence.push_back(next);
     }
