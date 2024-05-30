@@ -1,6 +1,8 @@
 # 4-xx. Fibonatti Number
 
-整数$N$を受け取り、フィボナッチ数列の$N$番目を出力しよう。
+正の整数$N$を受け取り、フィボナッチ数列の$N$番目を出力しよう。
+
+ただし、フィボナッチ数列は $\{1,1,2,...\}$ とします。
 
 :::spoiler Hint 1
 $F_{n}=F_{n-1}+F_{n-2}$をfor文で計算しよう。
@@ -24,7 +26,8 @@ int main() {
     int n;
     cin >> n;
     int second_latest = 0, latest = 1;
-    for (int i = 2; i < n; i++) {
+    for (int i = 2; i <= n; i++) {
+        // i番目を計算
         int next = second_latest + latest;
         second_latest = latest;
         latest = next;
@@ -44,11 +47,12 @@ int main() {
     int n;
     cin >> n;
     vector<int> fibonatti_sequence = {0, 1};
-    for (int i = 2; i < n; i++) {
+    for (int i = 2; i <= n; i++) {
+        // i番目を計算
         int next = fibonatti_sequence[i-1] + fibonatti_sequence[i-2];
         fibonatti_sequence.push_back(next);
     }
     cout << fibonatti_sequence.back() << endl;
 }
-
+```
 :::
