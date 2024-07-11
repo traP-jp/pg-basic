@@ -89,8 +89,8 @@ int main() {
 }
 ```
 
-- 保存して、VSCode 上で 「Run Code」
-- "Hello, traP!" と書いてる部分をいじったら出力が変わりそう？
+- 保存して、VSCode 上で 「Run Code」で実行できる。
+- `Hello, traP!` となっている部分を書き換えると出力が変わる。実際に試してみよう。
 
 ::: tip I 章のまとめ
 
