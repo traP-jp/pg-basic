@@ -131,7 +131,7 @@ traP OB である [@OrangeStar](https://trap.jp/author/OrangeStar) さんが過�
 更に、練習問題に当該講習会の問題を使用することを快くご承諾いただきました。
 
 また、友人 [twitter:su8ru_](https://twitter.com/su8ru_) と [twitter:ibuki2003](https://twitter.com/ibuki2003)
-にもテキスト制作にご協力頂きました。
+にもテキスト制作にご協力いただきました。
 
 どちらも初年度講習会を開催するにあたって必要不可欠な協力でした。この場を借りて御礼申し上げます。
 
