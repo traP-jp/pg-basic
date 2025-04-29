@@ -36,6 +36,40 @@ title: このテキストについて
 
 ### 講師
 
+- @akimo
+- @Luke256
+- @Oxojo
+- @tidus
+- @TwoSquirrels
+
+### TA 協力
+
+- @akimo
+- @Alt--er
+- @comavius
+- @eoa_te
+- @Futadaruma
+- @gurukun41
+- @ikura-hamu
+- @inutamago_dogegg
+- @jupiter_68
+- @kenken
+- @Kentaro1043
+- @Luke256
+- @meshi-meshi
+- @mumumu
+- @ogu_kazemiya
+- @Oxojo
+- @ramdos
+- @Takeno_hito
+- @tidus
+- @TwoSquirrels
+- @zoi_dayo
+
+::: spoiler 2024 年度講師陣
+
+### 講師
+
 - @Takeno_hito
 - @Pugma
 - @comavius
@@ -75,6 +109,8 @@ title: このテキストについて
 - @Qro
 - @masky5859
 - @zer0-star
+
+:::
 
 ::: spoiler 2023 年度講師陣
 
