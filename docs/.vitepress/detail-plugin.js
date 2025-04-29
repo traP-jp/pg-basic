@@ -16,4 +16,4 @@ const containerMdExtend = (md) => ({
     },
 });
 
-module.exports = containerMdExtend;
+export default containerMdExtend;
