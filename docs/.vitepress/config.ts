@@ -155,7 +155,7 @@ export default withMermaid({
             {
                 text: 'for traP Member Only',
                 items: [
-                    { text: '講習会 Wiki ページ', link: 'https://wiki.trap.jp/Event/welcome/24/lecture/pg-basic' },
+                    { text: '講習会 Wiki ページ', link: 'https://wiki.trap.jp/Event/welcome/25/lecture/pg-basic' },
                     // { text: '練習問題', link: 'https://md.trap.jp/IE4NUAc_RR-USMIXlevsgA' },
                 ]
             },
