@@ -188,7 +188,7 @@ export default withMermaid({
         [
             'script',
             {
-                async: true,
+                async: "true",
                 src: 'https://www.googletagmanager.com/gtag/js?id=G-977V87X2CQ',
             },
         ],
