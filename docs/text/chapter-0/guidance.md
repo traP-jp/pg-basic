@@ -113,7 +113,7 @@ ChatGPT などの生成 AI との付き合い方についてですが、一般�
     * ①：5/10 土 10:00-17:00
     * ②：5/11 日 10:00-17:00
 
-教室などの案内は、[講習会 wiki の 2024 年度 pg-basic ページ（部内のみ）](https://wiki.trap.jp/Event/welcome/24/lecture/pg-basic) をご確認ください。
+教室などの案内は、[**講習会Wiki** (部内のみ）](https://wiki.trap.jp/Event/welcome/25/lecture/pg-basic) をご確認ください。
 
 各章末に、練習問題A,B,C を用意しています。
 
