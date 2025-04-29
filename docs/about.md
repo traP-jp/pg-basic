@@ -22,7 +22,7 @@ title: このテキストについて
 
 ## traP について
 
-東京工業大学デジタル創作同好会 traP は、2024年4月現在 600 人以上が在籍する東京工業大学の中で随一の規模を誇る創作・プログラミングの総合サークルです。
+東京科学大学デジタル創作同好会 traP は、2025年4月現在 600 人以上が在籍する東京科学大学の中で随一の規模を誇る創作・プログラミングの総合サークルです。
 
 「アルゴリズム班」「CTF班」「ゲーム班」「グラフィック班」「サウンド班」「SysAd 班」「Kaggle 班」の 7 班が存在し、各々好きな分野で活動しています。
 
@@ -33,6 +33,40 @@ title: このテキストについて
 ### 主催サークル
 
 - traP https://trap.jp
+
+### 講師
+
+- @akimo
+- @Luke256
+- @Oxojo
+- @tidus
+- @TwoSquirrels
+
+### TA 協力
+
+- @akimo
+- @Alt--er
+- @comavius
+- @eoa_te
+- @Futadaruma
+- @gurukun41
+- @ikura-hamu
+- @inutamago_dogegg
+- @jupiter_68
+- @kenken
+- @Kentaro1043
+- @Luke256
+- @meshi-meshi
+- @mumumu
+- @ogu_kazemiya
+- @Oxojo
+- @ramdos
+- @Takeno_hito
+- @tidus
+- @TwoSquirrels
+- @zoi_dayo
+
+::: spoiler 2024 年度講師陣
 
 ### 講師
 
@@ -75,6 +109,8 @@ title: このテキストについて
 - @Qro
 - @masky5859
 - @zer0-star
+
+:::
 
 ::: spoiler 2023 年度講師陣
 
