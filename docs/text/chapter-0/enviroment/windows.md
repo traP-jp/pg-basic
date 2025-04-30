@@ -52,7 +52,7 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 
 10. Windows Terminal を閉じて、もう一度開く
 
-11. traQ の tasks チャンネルで :wsl: を押す
+11. traQ の tasks チャンネルで :wsl: スタンプを押す
 
 ## Step 2: Install Clang
 
@@ -87,7 +87,7 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 9. ターミナルで `code hello.txt` を入力し、VSCode が起動できたら成功！
 ![](https://md.trap.jp/uploads/upload_b00fe65803252e719a394f50527731d9.png)
 
-8. traQ の tasks チャンネルで :vscode: を押す
+8. traQ の tasks チャンネルで :vscode: スタンプを押す
 
 ## Step 4： 拡張機能の設定
 
@@ -148,6 +148,6 @@ int main() {
 ![](https://md.trap.jp/uploads/upload_2b042cfaa37207457e419a5380ccd466.png)
 :::
 
-11. traQ の tasks チャンネルで :done: を押す
+11. traQ の tasks チャンネルで :done: スタンプを押す
 
 12. 環境構築はこれで完了です！お疲れ様でした。 :blob_pyon: 
