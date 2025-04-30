@@ -93,7 +93,7 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 
 1. VSCodeの 画面で `Ctrl` + `Shift` + `X`
 
-2. 「C++」と入力し、「C/C++ Extenstion」の拡張機能を追加
+2. 「C++」と入力し、「C/C++ Extenstion Pack」の拡張機能を追加
 
 3. `Code Runner` と入力して、「Code Runner」拡張機能を追加
 
