@@ -19,7 +19,6 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 
     ![](https://md.trap.jp/uploads/upload_7266a7465d2df1dbc341237b2e4983b3.png)
 
-
     :::warning TA向け
 
     WSL インストールトラブルシューティング 
@@ -39,8 +38,11 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
     :::
 
 3. Ubuntu のアカウント設定
+
     1. `Enter new UNIX username:` が表示されるので、**半角英数小文字** でユーザーネームを入れる。（ `take` とか `takemura` とか `ryugo` とか短い方が良い。フォルダの名前になります）
+
     2. `New Password:` WSL 内で使いたいパスワードを入力。何も表示されませんが入力されています。入力できたら エンターキーを押す。
+
     3. `Retype New password:` もう一度入力。
 
     ![](https://md.trap.jp/uploads/upload_0fb105e906b7670d57ba0d0810418a95.png)
