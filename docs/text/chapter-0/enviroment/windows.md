@@ -176,6 +176,17 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 
     ![](https://md.trap.jp/uploads/upload_750a50362d2ae00ffcf2f4b041446ed9.png)
 
+    ::: TIP
+
+    三角のボタンが表示されない場合、ウィンドウの左下に「制限モード」と表示されていないか確認してみてください。
+
+    表示されている場合にはそこをクリックして、その先の画面で「信頼する」をクリックしてください。
+    (画像の赤枠部分)
+
+    ![](https://md.trap.jp/uploads/upload_90b63cfdbe22831b9c2f838152fab403.png)
+
+    :::
+
     ::: tip
 
     ボタンを押してもうまくいかない場合は、代わりに三角の隣の `v` を押して、「Run Code」を押してみてください！
