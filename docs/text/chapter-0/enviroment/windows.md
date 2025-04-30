@@ -109,6 +109,12 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 
     ![](https://md.trap.jp/uploads/upload_b00fe65803252e719a394f50527731d9.png)
 
+    ::: tip
+
+    VSCode が起動しない場合は、一度ターミナルを閉じて開きなおしてからコマンドを再度実行してみてください。
+
+    :::
+
 8. traQ の tasks チャンネルで :vscode: スタンプを押す
 
 ## Step 4： 拡張機能の設定
