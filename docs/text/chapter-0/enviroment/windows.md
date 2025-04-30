@@ -139,6 +139,15 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 
     ![](https://md.trap.jp/uploads/upload_1444ef8d082128cc2723db31555f3960.png)
 
+::: warning
+
+この時点で `settings.json` の編集画面の一部に **赤い波線** がある場合は、入力にミスがある可能性が高いです！
+もう一度確認してみてください。
+
+解決しない場合は近くの TA または [**相談チャンネル** (部内限定)](https://q.trap.jp/channels/event/workshop/pg-basic/sodan) にお知らせください。
+
+:::
+
 8. WSL を開き、 `code main.cpp` と入力する
 
 9. 次のように書く（コピペでも OK ）
