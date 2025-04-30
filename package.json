@@ -13,7 +13,7 @@
     "license": "MIT",
     "devDependencies": {
         "@mermaid-js/mermaid-mindmap": "^9.3.0",
-        "@types/node": "^20.3.1",
+        "@types/node": "^22.15.3",
         "@wekanteam/markdown-it-mermaid": "^0.6.4",
         "install": "^0.13.0",
         "markdown-it-charts": "^1.0.5",
@@ -22,7 +22,6 @@
         "markdown-it-mermaid": "^0.2.0",
         "markdown-it-texmath": "^1.0.0",
         "mermaid": "^11.6.0",
-        "npm": "^9.7.1",
         "vitepress": "1.0.0-beta.1",
         "vitepress-plugin-mermaid": "^2.0.10"
     },
