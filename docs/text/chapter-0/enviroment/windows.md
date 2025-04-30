@@ -8,7 +8,7 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 
 ## Step 1: Install WSL
 
-1. https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=ja-jp&gl=jp&icid=CNavAppsWindowsApps で Windows Terminal をインストール（既にインストールされていれば飛ばしてOKです）
+1. https://apps.microsoft.com/detail/9N0DX20HK701?hl=ja-jp&gl=JP&ocid=pdpshare で Windows Terminal をインストール（既にインストールされていれば飛ばしてOKです）
 
 1. アプリ検索の画面で、 `Terminal` と入力し 「管理者として実行」
 ![](https://md.trap.jp/uploads/upload_367dc95b2cd3e74c808320a907977237.png)
