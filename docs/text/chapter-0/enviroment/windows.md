@@ -39,7 +39,7 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 
 3. Ubuntu のアカウント設定
 
-    ::: TIP
+    ::: tip
 
     この時点でターミナルの下部に `Enter new UNIX username:` と表示されていない場合は、 `wsl -d Ubuntu` と入力してエンターを押してください。
 
@@ -176,7 +176,7 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 
     ![](https://md.trap.jp/uploads/upload_750a50362d2ae00ffcf2f4b041446ed9.png)
 
-    ::: TIP
+    ::: tip
 
     三角のボタンが表示されない場合、ウィンドウの左下に「制限モード」と表示されていないか確認してみてください。
 
