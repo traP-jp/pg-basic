@@ -158,7 +158,7 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 
     ::: tip
 
-    なにか出てきた場合は、代わりに三角の隣の`v` を押して、「Run Code」を押す！
+    ボタンを押してもうまくいかない場合は、代わりに三角の隣の `v` を押して、「Run Code」を押してみてください！
 
     ![](https://md.trap.jp/uploads/upload_2b042cfaa37207457e419a5380ccd466.png)
 
