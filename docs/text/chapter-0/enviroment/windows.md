@@ -8,7 +8,7 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 
 ## Step 1: Install WSL
 
-1. https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701?hl=ja-jp&gl=jp&icid=CNavAppsWindowsApps で Windows Terminal をインストール（既にインストールされていれば飛ばしてOKです）
+1. https://apps.microsoft.com/detail/9N0DX20HK701?hl=ja-jp&gl=JP&ocid=pdpshare で Windows Terminal をインストール（既にインストールされていれば飛ばしてOKです）
 
 1. アプリ検索の画面で、 `Terminal` と入力し 「管理者として実行」
 ![](https://md.trap.jp/uploads/upload_367dc95b2cd3e74c808320a907977237.png)
@@ -16,7 +16,6 @@ next: {link: '/text/chapter-0/guidance', text: 講習会ガイダンス'}
 
 2. `wsl --install -d Ubuntu` と入力して、エンターキーを押す。
 ![](https://md.trap.jp/uploads/upload_7266a7465d2df1dbc341237b2e4983b3.png)
-
 
 :::warning TA向け
 WSL インストールトラブルシューティング 
@@ -33,9 +32,11 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 :::
 
 3. Ubuntu のアカウント設定
-1. `Enter new UNIX username:` が表示されるので、**半角英数小文字** でユーザーネームを入れる。（ `take` とか `takemura` とか `ryugo` とか短い方が良い。フォルダの名前になります）
-2. `New Password:` WSL 内で使いたいパスワードを入力。何も表示されませんが入力されています。入力できたら エンターキーを押す。
-3. `Retype New password:` もう一度入力。
+    1. ターミナルの下部に `Enter new UNIX username:` と表示されていなければ `wsl -d Ubuntu` と入力してエンターキーを押す。
+        1. それでも `Enter new UNIX username` が表示されない場合（例えば「ディストリビューションが見つからない」という内容のエラーが表示される場合）は、インストールが失敗している可能性があるので Step 1 の 1. からやり直してみる（これでも上手くいかない場合は TA を呼んでください）
+    1. `Enter new UNIX username:` が表示されるので、**半角英数小文字** でユーザーネームを入れる。（ `take` とか `takemura` とか `ryugo` とか短い方が良い。フォルダの名前になります）
+    2. `New Password:` WSL 内で使いたいパスワードを入力。何も表示されませんが入力されています。入力できたら エンターキーを押す。
+    3. `Retype New password:` もう一度入力。
 
 ![](https://md.trap.jp/uploads/upload_0fb105e906b7670d57ba0d0810418a95.png)
 
@@ -52,7 +53,7 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 
 10. Windows Terminal を閉じて、もう一度開く
 
-11. traQ の tasks チャンネルで :wsl: を押す
+11. traQ の tasks チャンネルで :wsl: スタンプを押す
 
 ## Step 2: Install Clang
 
@@ -87,13 +88,17 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 9. ターミナルで `code hello.txt` を入力し、VSCode が起動できたら成功！
 ![](https://md.trap.jp/uploads/upload_b00fe65803252e719a394f50527731d9.png)
 
-8. traQ の tasks チャンネルで :vscode: を押す
+::: tip
+VSCode が起動しない場合は、一度ターミナルを閉じて開きなおしてからコマンドを再度実行してみてください。
+:::
+
+8. traQ の tasks チャンネルで :vscode: スタンプを押す
 
 ## Step 4： 拡張機能の設定
 
 1. VSCodeの 画面で `Ctrl` + `Shift` + `X`
 
-2. 「C++」と入力し、「C/C++ Extenstion」の拡張機能を追加
+2. 「C++」と入力し、「C/C++ Extenstion Pack」の拡張機能を追加
 
 3. `Code Runner` と入力して、「Code Runner」拡張機能を追加
 
@@ -123,6 +128,8 @@ https://learn.microsoft.com/ja-jp/windows/wsl/install-manual
 
 6. `"code-runner.executorMap": {` の行の前に `"code-runner.runInTerminal": true,` を書く（コピペ推奨！！）
 
+6. 編集画面に赤い波線が出ていないことを確認する。出ている場合は入力にミスがある可能性が高いので、もう一度確認してみる。 (それでも解決しない場合はTAを呼んでください)
+
 7. こんな感じになっていれば OK
 ![](https://md.trap.jp/uploads/upload_1444ef8d082128cc2723db31555f3960.png)
 
@@ -143,11 +150,20 @@ int main() {
 ![](https://md.trap.jp/uploads/upload_750a50362d2ae00ffcf2f4b041446ed9.png)
 
 ::: tip
-なにか出てきた場合は、代わりに三角の隣の`v` を押して、「Run Code」を押す！
+三角のボタンが表示されない場合、ウィンドウの左下に「制限モード」と表示されていないか確認してみてください。
+
+表示されている場合にはそこをクリックして、その先の画面で「信頼する」をクリックしてください。
+(画像の赤枠部分)
+
+![](https://md.trap.jp/uploads/upload_90b63cfdbe22831b9c2f838152fab403.png)
+:::
+
+::: tip
+ボタンを押してもうまくいかない場合は、代わりに三角の隣の `v` を押して、「Run Code」を押してみてください！
 
 ![](https://md.trap.jp/uploads/upload_2b042cfaa37207457e419a5380ccd466.png)
 :::
 
-11. traQ の tasks チャンネルで :done: を押す
+11. traQ の tasks チャンネルで :done: スタンプを押す
 
 12. 環境構築はこれで完了です！お疲れ様でした。 :blob_pyon: 
