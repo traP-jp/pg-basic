@@ -128,17 +128,10 @@ VSCode が起動しない場合は、一度ターミナルを閉じて開きな�
 
 6. `"code-runner.executorMap": {` の行の前に `"code-runner.runInTerminal": true,` を書く（コピペ推奨！！）
 
+6. 編集画面に赤い波線が出ていないことを確認する。出ている場合は入力にミスがある可能性が高いので、もう一度確認してみる。 (それでも解決しない場合はTAを呼んでください)
+
 7. こんな感じになっていれば OK
 ![](https://md.trap.jp/uploads/upload_1444ef8d082128cc2723db31555f3960.png)
-
-::: warning
-
-この時点で `settings.json` の編集画面の一部に **赤い波線** がある場合は、入力にミスがある可能性が高いです！
-もう一度確認してみてください。
-
-解決しない場合は近くの TA または [**相談チャンネル** (部内限定)](https://q.trap.jp/channels/event/workshop/pg-basic/sodan) にお知らせください。
-
-:::
 
 8. WSL を開き、 `code main.cpp` と入力する
 
