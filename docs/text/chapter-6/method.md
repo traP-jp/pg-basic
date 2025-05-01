@@ -32,7 +32,7 @@ int main() {
 }
 ```
 
-```text
+```txt
 [output]
 22B
 21B
