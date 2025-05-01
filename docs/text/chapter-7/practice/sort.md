@@ -35,7 +35,7 @@ int main() {
 
 ::: spoiler 解答
 
-```text
+```txt
 -400
 100
 130

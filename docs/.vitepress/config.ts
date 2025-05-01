@@ -1,9 +1,9 @@
 import { link } from 'fs';
 import { defineConfig } from 'vitepress'
-
-const containerMdExtend = require('./detail-plugin.js');
-const markdowinItCharts = require('markdown-it-charts');
-//import markdownItMermaid from 'markdown-it-mermaid'
+import markdownItContainer from 'markdown-it-container';
+import containerMdExtend from './detail-plugin.js';
+import markdowinItCharts from 'markdown-it-charts';
+import mathjax3 from 'markdown-it-mathjax3';
 import { withMermaid } from "vitepress-plugin-mermaid";
 import { head } from './ga-plugin';
 
@@ -19,12 +19,12 @@ export default withMermaid({
         //        lineNumbers: true,
         config: (md) => {
             md.use(
-                require('markdown-it-container'),
+                markdownItContainer,
                 'spoiler',
                 containerMdExtend(md),
             );
             md.use(markdowinItCharts);
-            md.use(require('markdown-it-mathjax3'));
+            md.use(mathjax3);
         }
     },
     themeConfig: {
@@ -188,7 +188,7 @@ export default withMermaid({
         [
             'script',
             {
-                async: true,
+                async: "true",
                 src: 'https://www.googletagmanager.com/gtag/js?id=G-977V87X2CQ',
             },
         ],
