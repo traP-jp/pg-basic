@@ -2,14 +2,40 @@
 
 入力から単語を１つ受け取り、それを出力しよう。
 
-:::spoiler Hint 1
+### 入力/出力例
+
+:::info 例1
+
+:::spoiler クリックして展開
+
+**入力**
+
+```
+Hello!
+```
+
+**出力**
+
+```
+Hello!
+```
+
+:::
+
+### ヒント
+
+:::tip ヒント1
+
+:::spoiler クリックして展開
 文字列型の変数を使うには、
 ```cpp
 string s;
 ```
 :::
 
-:::spoiler Hint 2
+:::tip ヒント2
+
+:::spoiler クリックして展開
 もしもこんなエラーが出たとしたら、
 ```
 ./Main.cpp:4:5: error: unknown type name 'string'; did you mean 'std::string'?
@@ -24,12 +50,17 @@ using namespace std;
 で、`std::`を省略できるようにしよう。
 :::
 
-:::spoiler Hint 3
+:::tip ヒント3
+
+:::spoiler クリックして展開
 入力を受け取るには`cin`を、出力するには`cout`を使おう。
 :::
 
+### 解答例
 
-:::spoiler Answer
+:::danger 解答例1
+
+:::spoiler クリックして展開
 
 ```cpp
 #include <iostream>
