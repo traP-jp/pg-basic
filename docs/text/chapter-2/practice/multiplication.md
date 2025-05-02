@@ -2,15 +2,42 @@
 
 cinでint型の整数を2つ受け取って、その積をターミナルに出力しよう。
 
-:::spoiler Hint 1
-２つの値を入力から受け取るには、
-```cpp
-cin >> first_value >> second_value;
+### 入力/出力例
+
+:::info 例1
+
+:::spoiler クリックして展開
+
+**入力**
+
+```
+3 4
+```
+
+**出力**
+
+```
+12
 ```
 
 :::
 
-:::spoiler Answer
+### ヒント
+
+:::tip ヒント1
+
+:::spoiler クリックして展開
+２つの値を入力から受け取るには、
+```cpp
+cin >> first_value >> second_value;
+```
+:::
+
+### 解答例
+
+:::danger 解答例1
+
+:::spoiler クリックして展開
 
 ```cpp
 #include <iostream>
