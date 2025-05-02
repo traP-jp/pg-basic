@@ -4,20 +4,76 @@
 
 ただし、フィボナッチ数列は $\{1,1,2,...\}$ とします。
 
-:::spoiler Hint 1
-$F_{n}=F_{n-1}+F_{n-2}$をfor文で計算しよう。
+### 入力/出力例
+
+:::info 例1
+
+:::spoiler クリックして展開
+
+**入力**
+
+```
+4
+```
+
+**出力**
+
+```
+3
+```
+
+> $F_4 = 3$
+
 :::
 
-:::spoiler Hint 2
+:::info 例2
+
+:::spoiler クリックして展開
+
+**入力**
+
+```
+6
+```
+
+**出力**
+
+```
+8
+```
+
+> $F_6 = 8$
+
+:::
+
+
+### ヒント
+
+:::tip ヒント1
+
+:::spoiler クリックして展開
+$F_{n}=F_{n-1}+F_{n-2}$を`for`文で計算しよう。
+:::
+
+:::tip ヒント2
+
+:::spoiler クリックして展開
 $F_{n-1}$ と $F_{n-2}$を持つ変数`latest`、`second_latest`を作り、ループの中で漸化式を満たすように更新していこう。
 :::
 
-:::spoiler Hint 3
-`latest`と`second_latest`を同時に更新することはできないので、一時的な変数`next`も使おう。
+:::tip ヒント3
+
+:::spoiler クリックして展開
+`latest`と`second_latest`を同時に更新することはできないので、一時的な変数(`next`など)を使って保持しておこう。
 :::
 
-:::spoiler Answer
+### 解答例
+
+:::danger 解答例1
+
+:::spoiler クリックして展開
 for文を使うことでフィボナッチ数列の$N$番目を求めることができる。
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -29,6 +85,8 @@ int main() {
     for (int i = 2; i <= n; i++) {
         // i番目を計算
         int next = second_latest + latest;
+
+        // 最新の値を更新
         second_latest = latest;
         latest = next;
     }
@@ -36,7 +94,12 @@ int main() {
 }
 ```
 
-別解: `.push_back`を用いて、フィボナッチ数列の各値を配列に格納していく方法もあります。
+:::
+
+:::danger 解答例2
+
+:::spoiler クリックして展開
+`.push_back`を用いて、フィボナッチ数列の各値を配列に格納していく方法もあります。
 
 ```cpp
 #include <iostream>
