@@ -35,7 +35,7 @@ int main() {
 
 ### 解答例
 
-::: danger 解答例1
+::: tip 解答例1
 ::: spoiler クリックして展開
 
 ```txt

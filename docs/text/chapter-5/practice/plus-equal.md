@@ -10,15 +10,13 @@ a += b;
 
 ### ヒント
 
-::: tip ヒント1
-
-::: spoiler クリックして展開
+::: details ヒント1
 `a`を参照渡しで受け取ることで、`a`の値を書き換えることができる。
 :::
 
 ### 解答例
 
-::: danger 解答例1
+::: tip 解答例1
 ::: spoiler クリックして展開
 ```cpp:line-numbers
 void compound_assigned_plus(int& lhs, int rhs) {

@@ -10,14 +10,11 @@ $\lnot(P \lor Q) \Leftrightarrow \lnot P \land \lnot Q$
 
 :::
 
-
 ### 入力/出力例
 
 以下の例では上のド・モルガンの法則の式の1つ目を`case 1`、2つ目を`case 2`としてコード内でチェックを行い、左辺と右辺の結果が一致している場合は`ok`と出力します。
 
-:::info 例1
-
-:::spoiler クリックして展開
+::: details 例1
 
 **入力**
 
@@ -36,15 +33,11 @@ case 2: ok
 
 ### ヒント
 
-:::tip ヒント1
-
-:::spoiler クリックして展開
+::: details ヒント1
 PとQが文字列として与えられるため、まずは`string`型で入力を受け取り、その値をチェックして`bool`型に変換しましょう。`==`演算子を用いればできるはず。
 :::
 
-:::tip ヒント2
-
-:::spoiler クリックして展開
+::: details ヒント2
 受け取った文字列を比較し、`"true"`と比較した結果を`bool`型の変数に代入しましょう。
 
 ```cpp
@@ -56,9 +49,9 @@ bool p = p_string == "true";
 
 ### 解答例
 
-:::danger 解答例1
+::: tip 解答例1
 
-:::spoiler クリックして展開
+::: spoiler クリックして展開
 
 ```cpp
 #include <iostream>

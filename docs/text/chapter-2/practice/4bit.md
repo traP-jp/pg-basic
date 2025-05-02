@@ -4,9 +4,7 @@
 
 ### 入力/出力例
 
-:::info 例1
-
-:::spoiler クリックして展開
+::: details 例1
 
 **入力**
 
@@ -22,9 +20,7 @@
 
 :::
 
-:::info 例2
-
-:::spoiler クリックして展開
+::: details 例2
 
 **入力**
 
@@ -42,38 +38,29 @@
 
 ### ヒント
 
-:::tip ヒント1
-
-:::spoiler クリックして展開
+::: details ヒント1
 `int`型では、`5 / 3`は`1`になる。
 
 :::
 
-
-:::tip ヒント2
-
-:::spoiler クリックして展開
+::: details ヒント2
 整数型の余りは`%`で得ることができる。
 
 :::
 
-:::tip ヒント3
-
-:::spoiler クリックして展開
+::: details ヒント3
 1桁ずつ出力してみよう。
 :::
 
-:::tip ヒント4
-
-:::spoiler クリックして展開
+::: details ヒント4
 $\displaystyle\left\lfloor\frac{n}{2^k}\right\rfloor$を2進数表記すると、$n$の2進数表記の$k+1$桁目以上を得ることができる。
 :::
 
 ### 解答例
 
-:::danger 解答例1
+::: tip 解答例1
  
-:::spoiler クリックして展開
+::: spoiler クリックして展開
 ```cpp
 #include <iostream>
 using namespace std;

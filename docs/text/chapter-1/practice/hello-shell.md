@@ -73,7 +73,7 @@ cat index.txt
 
 ### ヒント
 
-::: tip ヒント1
+::: info ヒント1
 
 ::: spoiler クリックして展開
 
@@ -85,7 +85,7 @@ cat index.txt
 
 :::
 
-::: tip ヒント2
+::: info ヒント2
 
 ::: spoiler クリックして展開
 
@@ -93,7 +93,7 @@ cat index.txt
 
 :::
 
-::: tip ヒント3
+::: info ヒント3
 
 ::: spoiler クリックして展開
 
@@ -104,7 +104,7 @@ cat index.txt
 
 ### 解答
 
-::: danger 解答
+::: tip 解答
 
 ::: spoiler クリックして展開
 

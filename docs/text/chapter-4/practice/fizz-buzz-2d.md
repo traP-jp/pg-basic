@@ -11,9 +11,7 @@
 
 ### 入力/出力例
 
-:::info 例1
-
-:::spoiler クリックして展開
+::: details 例1
 
 **入力**
 
@@ -37,7 +35,7 @@ Fi	Fi	Fi	Fi	FB	Fi
 
 ---
 
-:::tip 出力の幅を揃える方法
+::: tip 出力の幅を揃える方法
 数字 ( $i\times j$ ) や 文字 (`Fi`, `Bu`, `FB`) を出力した後に `\t` を出力すると数字や文字を揃えることができます。
 
 例えば、以下のコードで上記のような出力例を再現できます。
@@ -60,9 +58,9 @@ int main() {
 
 ### 解答例
 
-:::danger 解答例1
+::: tip 解答例1
 
-:::spoiler クリックして展開
+::: spoiler クリックして展開
 ```cpp
 #include <iostream>
 using namespace std;

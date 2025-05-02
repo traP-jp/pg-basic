@@ -37,9 +37,7 @@ int main() {
 
 ### 入力/出力例
 
-:::info 例1
-
-:::spoiler クリックして展開
+::: details 例1
 
 **入力**
 
@@ -55,9 +53,7 @@ int main() {
 
 :::
 
-:::info 例2
-
-:::spoiler クリックして展開
+::: details 例2
 
 **入力**
 
@@ -77,9 +73,7 @@ int main() {
 
 ### ヒント
 
-::: tip ヒント1
-
-::: spoiler クリックして展開
+::: details ヒント1
 `Item`構造体を宣言して、以下のメンバー変数とメソッドを実装しよう。
 - `price`(`int`型)
 - `name`(`string`型)
@@ -87,15 +81,13 @@ int main() {
 - `print`メソッド
 :::
 
-::: tip ヒント2
-
-::: spoiler クリックして展開
+::: details ヒント2
 クエリとして入力される`1`または`2`の値に応じて、条件に合致するアイテムの情報を出力しよう。
 :::
 
 ### 解答例
 
-::: danger 解答例1
+::: tip 解答例1
 
 ::: spoiler クリックして展開
 ```cpp:line-numbers

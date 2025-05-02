@@ -4,9 +4,7 @@
 
 ### 入力/出力例
 
-:::info 例1
-
-:::spoiler クリックして展開
+::: details 例1
 
 **入力**
 
@@ -31,9 +29,7 @@ Passed!
 ### ヒント
 
 
-:::tip ヒント1
-
-:::spoiler クリックして展開
+::: details ヒント1
 `while (true)`とすることで、明示的に`break`しない限り終了しないループを実装することができます。
 
 ```cpp
@@ -52,9 +48,9 @@ while(true) {
 
 ### 解答例
 
-:::danger 解答例1
+::: tip 解答例1
 
-:::spoiler クリックして展開
+::: spoiler クリックして展開
 ```cpp
 #include <iostream>
 using namespace std;

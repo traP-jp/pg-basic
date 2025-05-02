@@ -29,9 +29,7 @@ int main() {
 
 ### ヒント
 
-:::tip ヒント1
-
-::: spoiler クリックして展開
+::: details ヒント1
 
 下のコードの`// ここにフィボナッチ数列の計算を実装しよう`の部分を実装してみよう。
 
@@ -61,9 +59,9 @@ int main() {
 
 ### 解答例
 
-:::danger 解答例1
+::: tip 解答例1
 
-:::spoiler クリックして展開
+::: spoiler クリックして展開
 
 ```cpp:line-numbers
 #include <iostream>
