@@ -71,7 +71,11 @@ cat index.txt
 
 :::
 
-::: spoiler hint 1
+### ヒント
+
+::: info ヒント1
+
+::: spoiler クリックして展開
 
 ファイルの検索は `find` コマンドを使います。 `man find` で find コマンドについて調べることができます。ただし英語。
 
@@ -81,20 +85,28 @@ cat index.txt
 
 :::
 
-::: spoiler hint 2
+::: info ヒント2
+
+::: spoiler クリックして展開
 
 `find . -name [探したいファイル]` で調べられます。 `*` を使うと、曖昧検索ができます。 `code-*` と書くと、 `code-` で始まるファイルを検索できます。
 
 :::
 
-::: spoiler hint 3
+::: info ヒント3
+
+::: spoiler クリックして展開
 
 - `find . -name '*.txt'` でファイルを見つけることができます。
 - `cat [FILE]` でファイルを開くことができます。 `TAB` キーを押すと、候補を選んでくれます。
 
 :::
 
-::: spoiler answer
+### 解答
+
+::: tip 解答
+
+::: spoiler クリックして展開
 
 `cat 6db1b5a2e7/08dc869896/memo.txt` でファイルを開いてみましょう。
 

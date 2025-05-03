@@ -16,8 +16,6 @@
 1. 番号が与えられたときに、その商品の名前、値段、スペックを表示する。
 2. 値段が与えられたときに、その**値段以下**の全ての商品の名前、値段、スペックをすべて表示する。
 
-
-
 ```cpp:line-numbers
 #include <iostream>
 #include <vector>
@@ -30,37 +28,52 @@ struct Item {
 int main() {
     vector<Item> items = {
         Item{5000, "机", "それなり"},
-        ...
+        // ここにアイテムを追加
     };
     
     // ここに 1番 2番を 解けるプログラムを書く
 }
 ```
 
-## 入出力例
-```text
-[Input 1]
+### 入力/出力例
+
+::: details 例1
+
+**入力**
+
+```
 1 0
 ```
 
-```text
-[Output 1]
+**出力**
+
+```
 机 5000 それなり
 ```
 
-```text
-[Input 2]
+:::
+
+::: details 例2
+
+**入力**
+
+```
 2 100001
 ```
 
-```txt
-[Output 2]
+**出力**
+
+```
 机 5000 それなり
 チョコ 100 おいしい
 安いPC 100000 たかい
 ```
 
-::: spoiler Hint
+:::
+
+### ヒント
+
+::: details ヒント1
 `Item`構造体を宣言して、以下のメンバー変数とメソッドを実装しよう。
 - `price`(`int`型)
 - `name`(`string`型)
@@ -68,7 +81,15 @@ int main() {
 - `print`メソッド
 :::
 
-::: spoiler Answer
+::: details ヒント2
+クエリとして入力される`1`または`2`の値に応じて、条件に合致するアイテムの情報を出力しよう。
+:::
+
+### 解答例
+
+::: tip 解答例1
+
+::: spoiler クリックして展開
 ```cpp:line-numbers
 #include <iostream>
 #include <vector>

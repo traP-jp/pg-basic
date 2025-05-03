@@ -6,7 +6,6 @@ $c \equiv a ^ b \mod{M} | 0 \leq c < M$
 
 を満たす$c$を、再帰関数を使って出力しよう。
 
-
 - 基礎課題
     
     - $2 \leq a < 10^4$
@@ -18,8 +17,11 @@ $c \equiv a ^ b \mod{M} | 0 \leq c < M$
     - $0 \leq b < 10^{18}$
     - $M = 998244353$
 
+### 解答例
 
-:::spoiler Answer 基礎課題
+::: tip 解答例 - 基礎課題
+
+::: spoiler クリックして展開
 
 ```cpp
 // 愚直な再帰関数を用いた実装
@@ -43,7 +45,10 @@ int main() {
 ```
 :::
 
-:::spoiler Answer 発展課題
+::: tip 解答例 - 発展課題
+
+::: spoiler クリックして展開
+
 ```cpp
 // メモ化再帰を用いたダブリングの実装
 #include <iostream>

@@ -4,9 +4,12 @@
 
 <<<@/text/chapter-6/struct.cpp#define{cpp:line-numbers}
 
+### 解答例
 
-::: spoiler Answer
-値の設定をするメンバ関数と取得をするメンバ関数(それぞれ、setter,getterと呼ばれます)を用意すると、隠蔽されたメンバ変数へアクセスすることができる。
+::: tip 解答例1
+
+::: spoiler クリックして展開
+値の設定をするメンバ関数と取得をするメンバ関数(それぞれsetter/getterと呼ばれます)を用意すると、隠蔽されたメンバ変数へアクセスすることができる。
 ```cpp:line-numbers
 // setter, getterを用いた実装
 #include <iostream>
@@ -46,9 +49,13 @@ class CapsulatedMember {
         return grade;
     }
 };
+:::
 
-```
+::: tip 解答例2
+
+::: spoiler クリックして展開
 メンバ変数の参照を返すメンバ関数でも良い。
+
 ```cpp:line-numbers
 // 参照渡しを用いた実装
 #include <iostream>
