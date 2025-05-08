@@ -1,4 +1,4 @@
-# Divide each difficulty
+# 5-A1. Divide each difficulty
 
 以下の$n \leq 7$を受け取って$n \times n$の行列$a_{i,j}=Fibonatti_{ij}$を出力するプログラムの、フィボナッチ数列の解を求める部分を別の関数`int fibonatti(int index);`に分離してみよう。
 
