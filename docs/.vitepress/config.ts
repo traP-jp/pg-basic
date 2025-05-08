@@ -174,7 +174,15 @@ export default withMermaid({
                     { text: '再帰関数', link: '/text/chapter-8/recursive-function' },
                     { text: '実行時間', link: '/text/chapter-8/exec-time' },
                     { text: 'カプセル化', link: '/text/chapter-8/capsule' },
-                    { text: '練習問題', link: '/text/chapter-8/practice/' },
+                    {
+                        text: '練習問題',
+                        link: '/text/chapter-8/practice/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Capsulated Zer0-Star', link: '/text/chapter-8/practice/capsulate-user' },
+                            { text: 'Exponentation', link: '/text/chapter-8/practice/exponentation' },
+                        ],
+                    },
                 ],
             },
             {
