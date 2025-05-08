@@ -1,4 +1,4 @@
-# 練習問題 - Chapter 3
+# 練習問題 - Chapter 8
 
 - [Capsulated Zer0-Star](capsulate-user)
 - [Exponentation](exponentation)
