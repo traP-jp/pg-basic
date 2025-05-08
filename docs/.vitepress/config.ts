@@ -153,9 +153,16 @@ export default withMermaid({
                 text: 'VI. コードの簡易化② - Struct',
                 link: '/text/chapter-6/',
                 items: [
-                    {text: '構造体', link: '/text/chapter-6/struct'},
-                    {text: 'メソッド', link: '/text/chapter-6/method'},
-                    {text: '練習問題', link: '/text/chapter-6/practice/'},
+                    { text: '構造体', link: '/text/chapter-6/struct' },
+                    { text: 'メソッド', link: '/text/chapter-6/method' },
+                    { 
+                        text: '練習問題', 
+                        link: '/text/chapter-6/practice/',
+                        collapsed: true,
+                        items: [
+                            { text: '6-A1. Order', link: '/text/chapter-6/practice/order' },
+                        ]
+                    },
                 ]
             },
             { text: 'VII. おわりに・おまけ', link: '/text/chapter-7/' },
