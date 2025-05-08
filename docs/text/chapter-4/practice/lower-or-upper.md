@@ -1,4 +1,4 @@
-# lower or UPPER
+# 4-A3. lower or UPPER
 
 アルファベット1文字が渡されたとき、それが大文字なら"UPPERCASE"、小文字なら"lowercase"と出力しよう。
 
