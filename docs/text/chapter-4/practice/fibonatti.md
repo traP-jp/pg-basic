@@ -1,4 +1,4 @@
-# 4-xx. Fibonatti Number
+# 4-A1. Fibonatti Number
 
 正の整数$N$を受け取り、フィボナッチ数列の$N$番目を出力しよう。
 

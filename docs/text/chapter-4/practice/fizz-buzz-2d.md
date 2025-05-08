@@ -1,4 +1,4 @@
-# fizz-buzz 2D
+# 4-B1. fizz-buzz 2D
 
 整数 $H, W$ が渡されるので、$H\times W$ の二次元配列 $a_{i,j}\ (1\leq i\leq H, 1\leq j\leq W)$ を出力しよう。
 

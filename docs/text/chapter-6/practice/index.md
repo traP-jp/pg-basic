@@ -1,3 +1,3 @@
 # 練習問題 - Chapter 6
 
-- [Order](./order)
+- [6-A1. Order](./order)

@@ -117,7 +117,17 @@ export default withMermaid({
                     { text: '配列', link: '/text/chapter-4/array' },
                     { text: '文字列 ②', link: '/text/chapter-4/string' },
                     { text: 'for ②', link: '/text/chapter-4/for-advanced' },
-                    { text: '練習問題', link: '/text/chapter-4/practice/' },
+                    {
+                        text: '練習問題', 
+                        link: '/text/chapter-4/practice/' ,
+                        collapsed: true,
+                        items: [
+                            { text: '4-A1. Fibonatti', link: '/text/chapter-4/practice/fibonatti' },
+                            { text: '4-A2. DO NOT FAIL', link: '/text/chapter-4/practice/do-not-fail' },
+                            { text: '4-A3. lower or UPPER', link: '/text/chapter-4/practice/lower-or-upper' },
+                            { text: '4-B1. Fizz-Buzz 2D', link: '/text/chapter-4/practice/fizz-buzz-2d' },
+                        ]
+                    },
                 ]
             },
             {
@@ -128,16 +138,31 @@ export default withMermaid({
                     { text: '引数', link: '/text/chapter-5/argument' },
                     { text: '返り値', link: '/text/chapter-5/return-value' },
                     { text: '参照渡し', link: '/text/chapter-5/call-by-ref' },
-                    {text: '練習問題', link: '/text/chapter-5/practice/'}
+                    { 
+                        text: '練習問題', 
+                        link: '/text/chapter-5/practice/',
+                        collapsed: true,
+                        items: [
+                            { text: '5-A1. Divide each difficulty', link: '/text/chapter-5/practice/divide-each-difficulty' },
+                            { text: '5-A2. Operator+=', link: '/text/chapter-5/practice/plus-equal' },
+                        ]
+                    }
                 ]
             },
             {
                 text: 'VI. コードの簡易化② - Struct',
                 link: '/text/chapter-6/',
                 items: [
-                    {text: '構造体', link: '/text/chapter-6/struct'},
-                    {text: 'メソッド', link: '/text/chapter-6/method'},
-                    {text: '練習問題', link: '/text/chapter-6/practice/'},
+                    { text: '構造体', link: '/text/chapter-6/struct' },
+                    { text: 'メソッド', link: '/text/chapter-6/method' },
+                    { 
+                        text: '練習問題', 
+                        link: '/text/chapter-6/practice/',
+                        collapsed: true,
+                        items: [
+                            { text: '6-A1. Order', link: '/text/chapter-6/practice/order' },
+                        ]
+                    },
                 ]
             },
             { text: 'VII. おわりに・おまけ', link: '/text/chapter-7/' },
@@ -149,7 +174,15 @@ export default withMermaid({
                     { text: '再帰関数', link: '/text/chapter-8/recursive-function' },
                     { text: '実行時間', link: '/text/chapter-8/exec-time' },
                     { text: 'カプセル化', link: '/text/chapter-8/capsule' },
-                    { text: '練習問題', link: '/text/chapter-8/practice/' },
+                    {
+                        text: '練習問題',
+                        link: '/text/chapter-8/practice/',
+                        collapsed: true,
+                        items: [
+                            { text: 'Capsulated Zer0-Star', link: '/text/chapter-8/practice/capsulate-user' },
+                            { text: 'Exponentation', link: '/text/chapter-8/practice/exponentation' },
+                        ],
+                    },
                 ],
             },
             {
