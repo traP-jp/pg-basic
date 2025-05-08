@@ -138,7 +138,15 @@ export default withMermaid({
                     { text: '引数', link: '/text/chapter-5/argument' },
                     { text: '返り値', link: '/text/chapter-5/return-value' },
                     { text: '参照渡し', link: '/text/chapter-5/call-by-ref' },
-                    {text: '練習問題', link: '/text/chapter-5/practice/'}
+                    { 
+                        text: '練習問題', 
+                        link: '/text/chapter-5/practice/',
+                        collapsed: true,
+                        items: [
+                            { text: '5-A1. Divide each difficulty', link: '/text/chapter-5/practice/divide-each-difficulty' },
+                            { text: '5-A2. Operator+=', link: '/text/chapter-5/practice/plus-equal' },
+                        ]
+                    }
                 ]
             },
             {
