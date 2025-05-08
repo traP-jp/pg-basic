@@ -117,7 +117,17 @@ export default withMermaid({
                     { text: '配列', link: '/text/chapter-4/array' },
                     { text: '文字列 ②', link: '/text/chapter-4/string' },
                     { text: 'for ②', link: '/text/chapter-4/for-advanced' },
-                    { text: '練習問題', link: '/text/chapter-4/practice/' },
+                    {
+                        text: '練習問題', 
+                        link: '/text/chapter-4/practice/' ,
+                        collapsed: true,
+                        items: [
+                            { text: '4-A1. Fibonatti', link: '/text/chapter-4/practice/fibonatti' },
+                            { text: '4-A2. DO NOT FAIL', link: '/text/chapter-4/practice/do-not-fail' },
+                            { text: '4-A3. lower or UPPER', link: '/text/chapter-4/practice/lower-or-upper' },
+                            { text: '4-B1. Fizz-Buzz 2D', link: '/text/chapter-4/practice/fizz-buzz-2d' },
+                        ]
+                    },
                 ]
             },
             {
