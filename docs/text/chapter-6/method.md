@@ -59,7 +59,7 @@ int main() {
     Member zer0star{"zer0-star", "22BXXXXX", 2};
 
     zer0star.updateGrade(1);
-    cout << yukikurage.grade << endl;
+    cout << zer0star.grade << endl;
 }
 ```
 
