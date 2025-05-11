@@ -62,7 +62,6 @@ int main() {
     else {
         cout << "UPPERCASE" << endl;
     }
-    return 0;
 }
 ```
 :::
