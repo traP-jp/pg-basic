@@ -1,0 +1,74 @@
+# 4-A2. DO NOT FAIL
+
+入力された複数の点数を受け取って、59点以下なら`Failed`と出力しよう。また、`-1`が入力されたら`Passed!`と出力して終了しよう。
+
+### 入力/出力例
+
+::: details 例1
+
+**入力**
+
+```
+59
+72
+31
+-1
+```
+
+**出力**
+
+```
+Failed
+Failed
+Passed!
+```
+
+> 72の入力に対しては出力を行いません。
+:::
+
+### ヒント
+
+
+::: details ヒント1
+`for true)`とすることで、明示的に`break`しない限り終了しないループを実装することができます。
+
+```go
+// これは絶対に終了しない (無限ループ)
+while(true) {
+}
+
+while(true) {
+    // 適当な条件でbreakを実行することでループを抜けることが可能
+    if (some_condition) {
+        break
+    }
+}
+```
+:::
+
+### 解答例
+
+::: tip 解答例1
+
+::: spoiler クリックして展開
+```go
+import "fmt"
+
+func main() {
+    while(true) {
+    var score int
+        fmt.Scan(&score)
+
+        if (score == -1) {
+            fmt.Println("Passed!")
+            break
+        }
+
+        if (score < 60) {
+            fmt.Println("Failed")
+        }
+    }
+
+    return 0
+}
+```

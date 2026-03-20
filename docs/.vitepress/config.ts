@@ -59,8 +59,8 @@ export default withMermaid({
                 items: [
                     { text: 'コンパイルとOS', link: '/text/chapter-1/compile-os' },
                     { text: 'ターミナルの扱い', link: '/text/chapter-1/terminal' },
-                    { 
-                        text: '練習問題', 
+                    {
+                        text: '練習問題',
                         link: '/text/chapter-1/practice/',
                         collapsed: true,
                         items: [
@@ -77,7 +77,7 @@ export default withMermaid({
                     { text: 'はじめてのプログラミング解説', link: '/text/chapter-2/hello-world' },
                     { text: 'int 変数', link: '/text/chapter-2/variables' },
                     { text: '変数の入力', link: '/text/chapter-2/input' },
-                    { 
+                    {
                         text: '練習問題',
                         link: '/text/chapter-2/practice/',
                         collapsed: true,
@@ -95,7 +95,7 @@ export default withMermaid({
                 items: [
                     { text: '条件分岐', link: '/text/chapter-3/if-else' },
                     { text: '型', link: '/text/chapter-3/type' },
-                    { 
+                    {
                         text: '練習問題',
                         link: '/text/chapter-3/practice/',
                         collapsed: true,
@@ -104,7 +104,7 @@ export default withMermaid({
                             { text: '3-A2. Fraction', link: '/text/chapter-3/practice/fraction' },
                             { text: '3-B1. int128', link: '/text/chapter-3/practice/int128' },
                             { text: '3-B2. De Morgan\'s laws', link: '/text/chapter-3/practice/de-morgans-laws' },
-                        ]  
+                        ]
                     },
                 ]
             },
@@ -203,9 +203,133 @@ export default withMermaid({
                     // { text: 'Chapter 6', link: '/guide/chapter-6' },
                 ]
             },
-            { 
+            {
                 text: 'プライバシーポリシー', link: '/privacy-policy'
-            }
+            },
+            {
+                text: 'Go 版テキスト（非公式）',
+                link: '/go-text/',
+                items: [
+                    {
+                        text: 'I. はじめてのプログラミング',
+                        link: '/go-text/chapter-1/',
+                        collapsed: true,
+                        items: [
+                            { text: 'コンパイルとOS', link: '/go-text/chapter-1/compile-os' },
+                            { text: 'ターミナルの扱い', link: '/go-text/chapter-1/terminal' },
+                            {
+                                text: '練習問題',
+                                link: '/go-text/chapter-1/practice/',
+                                collapsed: true,
+                                items: [
+                                    { text: '1-B1. はじめてのプログラミング nano 編', link: '/go-text/chapter-1/practice/nano-test' },
+                                    { text: '1-C1. Hello shell', link: '/go-text/chapter-1/practice/hello-shell' },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        text: 'II. 変数と入出力',
+                        link: '/go-text/chapter-2/',
+                        collapsed: true,
+                        items: [
+                            { text: 'はじめてのプログラミング解説', link: '/go-text/chapter-2/hello-world' },
+                            { text: 'int 変数', link: '/go-text/chapter-2/variables' },
+                            { text: '変数の入力', link: '/go-text/chapter-2/input' },
+                            {
+                                text: '練習問題',
+                                link: '/go-text/chapter-2/practice/',
+                                collapsed: true,
+                                items: [
+                                    { text: '2-A1. Multiplication', link: '/go-text/chapter-2/practice/multiplication' },
+                                    { text: '2-B1. 4bit', link: '/go-text/chapter-2/practice/4bit' },
+                                    { text: '2-B2. Sum', link: '/go-text/chapter-2/practice/sum' },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        text: 'III. 演算・計算',
+                        link: '/go-text/chapter-3/',
+                        collapsed: true,
+                        items: [
+                            { text: '条件分岐', link: '/go-text/chapter-3/if-else' },
+                            { text: '型', link: '/go-text/chapter-3/type' },
+                            {
+                                text: '練習問題',
+                                link: '/go-text/chapter-3/practice/',
+                                collapsed: true,
+                                items: [
+                                    { text: '3-A1. Echo', link: '/go-text/chapter-3/practice/echo' },
+                                    { text: '3-A2. Fraction', link: '/go-text/chapter-3/practice/fraction' },
+                                    { text: '3-B1. int128', link: '/go-text/chapter-3/practice/int128' },
+                                    { text: '3-B2. De Morgan\'s laws', link: '/go-text/chapter-3/practice/de-morgans-laws' },
+                                ],
+                            },
+                        ],
+                    },
+                    {
+                        text: 'IV. 繰り返し処理',
+                        link: '/go-text/chapter-4/',
+                        collapsed: true,
+                        items: [
+                            { text: 'for ①', link: '/go-text/chapter-4/for-basic' },
+                            { text: 'while', link: '/go-text/chapter-4/while' },
+                            { text: '配列', link: '/go-text/chapter-4/array' },
+                            { text: '文字列 ②', link: '/go-text/chapter-4/string' },
+                            { text: 'for ②', link: '/go-text/chapter-4/for-advanced' },
+                            {
+                                text: '練習問題',
+                                link: '/go-text/chapter-4/practice/',
+                                collapsed: true,
+                                items: [
+                                    { text: '4-A1. Fibonatti', link: '/go-text/chapter-4/practice/fibonatti' },
+                                    { text: '4-A2. DO NOT FAIL', link: '/go-text/chapter-4/practice/do-not-fail' },
+                                    { text: '4-A3. lower or UPPER', link: '/go-text/chapter-4/practice/lower-or-upper' },
+                                    { text: '4-B1. Fizz-Buzz 2D', link: '/go-text/chapter-4/practice/fizz-buzz-2d' },
+                                ]
+                            },
+                        ],
+                    },
+                    {
+                        text: 'V. コードの簡易化① - Function',
+                        link: '/go-text/chapter-5/',
+                        collapsed: true,
+                        items: [
+                            { text: '関数とは', link: '/go-text/chapter-5/about-function' },
+                            { text: '引数', link: '/go-text/chapter-5/argument' },
+                            { text: '返り値', link: '/go-text/chapter-5/return-value' },
+                            { text: '参照渡し', link: '/go-text/chapter-5/call-by-ref' },
+                            {
+                                text: '練習問題',
+                                link: '/go-text/chapter-5/practice/',
+                                collapsed: true,
+                                items: [
+                                    { text: '5-A1. Divide each difficulty', link: '/go-text/chapter-5/practice/divide-each-difficulty' },
+                                    { text: '5-A2. Operator+=', link: '/go-text/chapter-5/practice/plus-equal' },
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        text: 'VI. コードの簡易化② - Struct',
+                        link: '/go-text/chapter-6/',
+                        collapsed: true,
+                        items: [
+                            { text: '構造体', link: '/go-text/chapter-6/struct' },
+                            { text: 'メソッド', link: '/go-text/chapter-6/method' },
+                            {
+                                text: '練習問題',
+                                link: '/go-text/chapter-6/practice/',
+                                collapsed: true,
+                                items: [
+                                    { text: '6-A1. Order', link: '/go-text/chapter-6/practice/order' },
+                                ]
+                            },
+                        ]
+                    },
+                ]
+            },
         ],
 
         socialLinks: [

@@ -1,0 +1,101 @@
+# 4.5. for ②
+
+## 4.5.1. break
+
+for文・while 文はbreakを用いて途中で終了して抜け出すことができる。
+
+```go:line-numbers
+v := []int{1, 4, 0, 6, 10}
+
+for _, value := range v {
+  fmt.Println(value)
+  if (value == 0) {
+    break
+  }
+}
+```
+
+```
+[output]
+1
+4
+0
+```
+
+```mermaid
+flowchart LR
+    start[Start] --> declare["v = {1,4,0,6,10}"] --> init[[int i=0]]
+    subgraph for
+      init --> cond[[i<5]]
+      cond --> |Yes| work[["fmt.Println(v[i]"]] --> isZero)
+      isZero --> |Yes| break[[break]]
+      isZero --> |No| cont[[i++]] --> cond
+      end
+    break --> e
+    cond --> |No| e["End"]
+```
+
+## 4.5.2. continue
+
+continueを用いると、ループの現在のステップを飛ばして、次のステップに進むことができる。
+
+```go:line-numbers
+v := []int{1, 4, 0, 6, 10}
+
+for _, value := range v {
+  if (value == 0) {
+    continue
+  }
+  fmt.Println(value)
+}
+```
+
+```mermaid
+flowchart LR
+    start[Start] --> declare["v = {1,4,0,6,10}"] --> init[[int i=0]]
+    subgraph for
+      init --> cond[[i<5]]
+      cond --> isZero
+      isZero --> |Yes| continue[[continue]] --> cont
+      isZero --> |No| work[["fmt.Println(v[i]"]] --> cont[[i++]] --> cond)
+      end
+    cond --> |No| e["End"]
+```
+
+## 4.5.3. 多重ループ
+
+```go:line-numbers
+for i := range 2 {
+  for j := range 3 {
+    fmt.Println(i, " ", j)
+  }
+}
+```
+
+```
+[output]
+0 0
+0 1
+0 2
+1 0
+1 1
+1 2
+```
+
+for 文の内側に更に for 文を書いて、二重 for を書くことができる。
+また、配列の配列という形で二次元配列を作ることもできる。（オセロ盤みたいなイメージ）
+
+```go:line-numbers
+v := [][]int{
+  {1, 2, 3, 4},
+  {3, 5, 1, 2},
+  {10, 20, 10, 20},
+}
+```
+
+::: info
+[**\[ IV の練習問題へ\]**](https://md.trap.jp/IE4NUAc_RR-USMIXlevsgA#Section-IV)
+
+[**\[講習会ページに戻る\]**](https://wiki.trap.jp/Event/welcome/23/lecture/pg-basic)
+:::
+
