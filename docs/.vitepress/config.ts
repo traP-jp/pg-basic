@@ -37,7 +37,26 @@ export default withMermaid({
             { text: 'テキスト', link: '/text/chapter-0/' }
         ],
 
-        sidebar: [
+        sidebar: {
+            '/cpp/': [
+                {
+                    text: 'はじめに',
+                    link: '/cpp/preface/',
+                    items: [
+                        { text: 'この講習会について', link: '/cpp/preface/1' },
+                        { text: 'このテキストについて', link: '/cpp/preface/2' },
+                    ]
+                },
+                {
+                    text: '1. 環境構築',
+                    link: '/cpp/chapter-1/',
+                    items: [
+                        { text: '1-A. Macの環境構築', link: '/cpp/chapter-1/1-A' },
+                        { text: '1-B. Windowsの環境構築', link: '/cpp/chapter-1/1-B' },
+                    ]
+                },
+            ],
+            '/text/': [
             {
                 text: 'About',
                 items: [
@@ -203,10 +222,11 @@ export default withMermaid({
                     // { text: 'Chapter 6', link: '/guide/chapter-6' },
                 ]
             },
-            { 
+            {
                 text: 'プライバシーポリシー', link: '/privacy-policy'
             }
-        ],
+            ],
+        },
 
         socialLinks: [
             {
