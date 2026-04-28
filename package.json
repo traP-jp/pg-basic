@@ -26,6 +26,7 @@
         "vitepress-plugin-mermaid": "^2.0.10"
     },
     "dependencies": {
+        "kiso.css": "^1.2.4",
         "markdown-it": "^14.1.0",
         "markdown-it-mathjax3": "^4.3.2"
     },
