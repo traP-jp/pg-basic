@@ -13,7 +13,7 @@ import { head } from './ga-plugin';
 export default withMermaid({
     title: "pg-basic text",
     description: "プログラミング基礎講習会テキスト",
-    cleanUrls: false,
+    cleanUrls: true,
     markdown: {
 
         //        lineNumbers: true,
@@ -238,6 +238,9 @@ export default withMermaid({
         ]
     },
     head: [
+        ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+        ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+        ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap' }],
         [
             'script',
             {
