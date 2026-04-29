@@ -12,7 +12,7 @@ hero:
           link: /cpp/preface/
         - theme: alt
           text: このテキストについて
-          link: /about
+          link: /cpp/preface/2
         - theme: alt
           text: プライバシーポリシー
           link: /privacy-policy
