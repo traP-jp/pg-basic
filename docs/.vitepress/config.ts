@@ -75,6 +75,25 @@ export default withMermaid({
                         },
                     ]
                 },
+                {
+                    text: '3. 変数と入出力',
+                    link: '/cpp/chapter-3/',
+                    items: [
+                        { text: '3.1 Hello, traP! の解説', link: '/cpp/chapter-3/1' },
+                        { text: '3.2 int型変数', link: '/cpp/chapter-3/2' },
+                        { text: '3.3 標準入出力', link: '/cpp/chapter-3/3' },
+                        {
+                            text: '練習問題',
+                            link: '/cpp/chapter-3/problems/',
+                            collapsed: true,
+                            items: [
+                                { text: '3-A1. Multiplication', link: '/cpp/chapter-3/problems/multiplication' },
+                                { text: '3-B1. 4bit', link: '/cpp/chapter-3/problems/4bit' },
+                                { text: '3-B2. Sum', link: '/cpp/chapter-3/problems/sum' },
+                            ],
+                        },
+                    ]
+                },
             ],
             '/text/': [
             {
