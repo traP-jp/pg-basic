@@ -55,6 +55,23 @@ export default withMermaid({
                         { text: '1-B. Windowsの環境構築', link: '/cpp/chapter-1/1-B' },
                     ]
                 },
+                {
+                    text: '2. はじめてのプログラミング',
+                    link: '/cpp/chapter-2/',
+                    items: [
+                        { text: '2.1 プログラミングの基礎知識', link: '/cpp/chapter-2/1' },
+                        { text: '2.2 作業環境の構築', link: '/cpp/chapter-2/2' },
+                        { text: '2.3 はじめてのプログラミング', link: '/cpp/chapter-2/3' },
+                        {
+                            text: '練習問題',
+                            link: '/cpp/chapter-2/problems/',
+                            collapsed: true,
+                            items: [
+                                { text: '2-Q1. Hello, Shell!', link: '/cpp/chapter-2/problems/hello-shell' },
+                            ],
+                        },
+                    ]
+                },
             ],
             '/text/': [
             {
