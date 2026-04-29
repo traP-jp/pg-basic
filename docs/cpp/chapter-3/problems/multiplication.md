@@ -1,4 +1,4 @@
-# 2-A1. Multiplication
+# 3-A1. Multiplication
 
 cinでint型の整数を2つ受け取って、その積をターミナルに出力しよう。
 
