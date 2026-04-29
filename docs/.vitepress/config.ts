@@ -11,7 +11,7 @@ import { head } from './ga-plugin';
 // https://vitepress.dev/reference/site-config
 
 export default withMermaid({
-    title: "pg-basic text",
+    title: "プログラミング基礎講習会",
     description: "プログラミング基礎講習会テキスト",
     cleanUrls: true,
     markdown: {
@@ -34,11 +34,14 @@ export default withMermaid({
         },
         nav: [
             { text: 'ホーム', link: '/' },
-            { text: 'テキスト', link: '/text/chapter-0/' }
         ],
 
         sidebar: {
             '/cpp/': [
+                {
+                    text: '2025年度版テキスト',
+                    link: '/text/chapter-0/',
+                },
                 {
                     text: 'はじめに',
                     link: '/cpp/preface/',
@@ -57,6 +60,10 @@ export default withMermaid({
                 },
             ],
             '/text/': [
+            {
+                text: '2026年度版テキスト [WIP]',
+                link: '/cpp/preface/',
+            },
             {
                 text: 'About',
                 items: [
