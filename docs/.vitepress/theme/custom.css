@@ -1,9 +1,14 @@
 @import "kiso.css";
 
 :root {
-    --vp-font-family-base: 'Noto Sans JP', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --vp-font-family-base:
+    "Noto Sans JP", "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 mjx-container.MathJax svg {
-    display: inline;
+  display: inline;
+}
+
+summary {
+  list-style-type: revert;
 }

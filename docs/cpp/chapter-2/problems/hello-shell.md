@@ -23,9 +23,9 @@ cd hello-shell/
 
 ::: tip
 
-Windows (Ubuntu) で、↑のステップの中でエラーが出たら TA を呼んでください。
+Windows (Ubuntu) で、↑のステップの中でエラーが出たらTAを呼んでください。
 
-TA 向け: curl と zip のインストールが必要です。もし入ってなければ以下の手順で導入してください。
+TA向け: curl と zip のインストールが必要です。もし入ってなければ以下の手順で導入してください。
 
 ```sh
 sudo apt install zip curl -y
@@ -64,7 +64,7 @@ cat index.txt
 ::: tip おさらい コマンドいろいろ
 
 - `pwd` : 現在の自分の場所 (**P**rint **W**orking **D**irectory)
-- `ls` : 今いるディレクトリにあるファイル (**L**ist **S**egments)
+- `ls` : 今いるディレクトリにあるファイル (**l**i**s**t)
 - `cd <...>` : ディレクトリを移動する (**C**hange **D**irectory)
 - `cd ../` 一つ親のディレクトリに移動する (`/home/trap` なら `/home` に移動)
 - `mkdir <...>` : ディレクトリを作成する (**M**a**k**e **Dir**ectory)
@@ -73,19 +73,21 @@ cat index.txt
 
 ### ヒント
 
-::: info ヒント1
+:::: info ヒント1
 
 ::: spoiler クリックして展開
 
-ファイルの検索は `find` コマンドを使います。 `man find` で find コマンドについて調べることができます。ただし英語。
+ファイルの検索は `find` コマンドを使います。 `man find` で `find` コマンドについて調べることができます。ただし英語。
 
-もしくは、Google で `man find` と検索しても良いでしょう。こっちは日本語もあります。
+もしくは、Googleで `man find` と検索しても良いでしょう。こっちは日本語もあります。
 
 見つけたファイルは `cat [file]` で出力できます。
 
 :::
 
-::: info ヒント2
+::::
+
+:::: info ヒント2
 
 ::: spoiler クリックして展開
 
@@ -93,7 +95,9 @@ cat index.txt
 
 :::
 
-::: info ヒント3
+::::
+
+:::: info ヒント3
 
 ::: spoiler クリックして展開
 
@@ -102,12 +106,16 @@ cat index.txt
 
 :::
 
+::::
+
 ### 解答
 
-::: tip 解答
+:::: tip 解答
 
 ::: spoiler クリックして展開
 
 `cat 6db1b5a2e7/08dc869896/memo.txt` でファイルを開いてみましょう。
 
 :::
+
+::::
