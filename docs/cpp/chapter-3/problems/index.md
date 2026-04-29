@@ -1,4 +1,4 @@
-# 練習問題 - Chapter 3
+# [WIP] 練習問題 - Chapter 3
 
 - [2-A1. Multiplication](multiplication)
 - [2-B1. 4bit](4bit)
