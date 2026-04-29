@@ -11,9 +11,9 @@ import { head } from './ga-plugin';
 // https://vitepress.dev/reference/site-config
 
 export default withMermaid({
-    title: "pg-basic text",
+    title: "プログラミング基礎講習会",
     description: "プログラミング基礎講習会テキスト",
-    cleanUrls: false,
+    cleanUrls: true,
     markdown: {
 
         //        lineNumbers: true,
@@ -34,11 +34,14 @@ export default withMermaid({
         },
         nav: [
             { text: 'ホーム', link: '/' },
-            { text: 'テキスト', link: '/text/chapter-0/' }
         ],
 
         sidebar: {
             '/cpp/': [
+                {
+                    text: '2025年度版テキスト',
+                    link: '/text/chapter-0/',
+                },
                 {
                     text: 'はじめに',
                     link: '/cpp/preface/',
@@ -55,8 +58,29 @@ export default withMermaid({
                         { text: '1-B. Windowsの環境構築', link: '/cpp/chapter-1/1-B' },
                     ]
                 },
+                {
+                    text: '2. はじめてのプログラミング',
+                    link: '/cpp/chapter-2/',
+                    items: [
+                        { text: '2.1 プログラミングの基礎知識', link: '/cpp/chapter-2/1' },
+                        { text: '2.2 作業環境の構築', link: '/cpp/chapter-2/2' },
+                        { text: '2.3 はじめてのプログラミング', link: '/cpp/chapter-2/3' },
+                        {
+                            text: '練習問題',
+                            link: '/cpp/chapter-2/problems/',
+                            collapsed: true,
+                            items: [
+                                { text: '2-Q1. Hello, Shell!', link: '/cpp/chapter-2/problems/hello-shell' },
+                            ],
+                        },
+                    ]
+                },
             ],
             '/text/': [
+            {
+                text: '2026年度版テキスト [WIP]',
+                link: '/cpp/preface/',
+            },
             {
                 text: 'About',
                 items: [
@@ -238,6 +262,9 @@ export default withMermaid({
         ]
     },
     head: [
+        ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+        ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+        ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap' }],
         [
             'script',
             {
