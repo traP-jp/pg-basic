@@ -8,8 +8,8 @@ hero:
     tagline: "プログラミング基礎講習会テキスト"
     actions:
         - theme: brand
-          text: テキストを開く
-          link: /text/chapter-0/
+          text: テキスト（2026年度版）
+          link: /cpp/preface/
         - theme: alt
           text: このテキストについて
           link: /about
@@ -17,27 +17,33 @@ hero:
           text: プライバシーポリシー
           link: /privacy-policy
 
-features:
-    - title: 0. はじめに
-      details: 講習を受ける上での心構えと環境構築
-      link: /text/chapter-0/
-    - title: I. はじめてのプログラミング
-      details: 「プログラミング」と前提知識を知り、触れる
-      link: /text/chapter-1/
-    - title: II. 変数と入出力
-      details: 入出力と変数・演算で基本的なプログラムの作成
-      link: /text/chapter-2/
-    - title: III. 演算・計算
-      details: 条件分岐や、小数型・文字列型
-      link: /text/chapter-3/
-    - title: IV. 繰り返し処理
-      details: 繰り返し処理と、文字列の操作
-      link: /text/chapter-4/
-    - title: V. Function
-      details: 関数・再帰を用いた実装
-      link: /text/chapter-5/
-    - title: VI. Struct
-      details: 便利にプログラミングをするための概念
-      link: /text/chapter-6/
+
 ---
 
+現在2026年度版のテキストを作成中です。構成の変更や内容の追加などを行っています。執筆が完了した章から順次公開していきます。
+
+- [はじめに](/cpp/preface/)
+  - [この講習会について](/cpp/preface/1)
+  - [このテキストについて](/cpp/preface/2)
+- [1. 環境構築](/cpp/chapter-1/)
+  - [1-A. Macの環境構築](/cpp/chapter-1/1-A)
+  - [1-B. Windowsの環境構築](/cpp/chapter-1/1-B)
+- [2. はじめてのプログラミング](/cpp/chapter-2/)
+  - [2.1 プログラミングの基礎知識](/cpp/chapter-2/1)
+  - [2.2 作業環境の構築](/cpp/chapter-2/2)
+  - [2.3 はじめてのプログラミング](/cpp/chapter-2/3)
+  - [練習問題](/cpp/chapter-2/problems/)
+
+:::details 2025年版テキスト
+
+こちらは2025年度以前に使用していたテキストです。
+
+- [0. はじめに](/text/chapter-0/)
+- [I. はじめてのプログラミング](/text/chapter-1/)
+- [II. 変数と入出力](/text/chapter-2/)
+- [III. 演算・計算](/text/chapter-3/)
+- [IV. 繰り返し処理](/text/chapter-4/)
+- [V. Function](/text/chapter-5/)
+- [VI. Struct](/text/chapter-6/)
+
+:::
