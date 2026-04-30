@@ -1,3 +1,9 @@
+---
+prev:
+  text: '1. 環境構築'
+  link: '/cpp/chapter-1/'
+---
+
 # 2. はじめてのプログラミング
 
 :::warning TA向け
