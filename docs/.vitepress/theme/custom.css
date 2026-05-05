@@ -13,7 +13,6 @@ summary {
   list-style-type: revert;
 }
 
-p code {
-  margin-right: 2px;
-  margin-left: 2px;
+.vp-doc :not(pre) > code {
+  margin: 0 3px;
 }
