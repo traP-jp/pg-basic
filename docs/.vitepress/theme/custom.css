@@ -12,3 +12,8 @@ mjx-container.MathJax svg {
 summary {
   list-style-type: revert;
 }
+
+p code {
+  margin-right: 2px;
+  margin-left: 2px;
+}
