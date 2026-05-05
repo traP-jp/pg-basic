@@ -32,10 +32,6 @@ export default withMermaid({
     sidebar: {
       "/cpp/": [
         {
-          text: "2025年度版テキスト",
-          link: "/text/chapter-0/",
-        },
-        {
           text: "はじめに",
           link: "/cpp/preface/",
           items: [
@@ -47,8 +43,8 @@ export default withMermaid({
           text: "1. 環境構築",
           link: "/cpp/chapter-1/",
           items: [
-            { text: "1-A. Macの環境構築", link: "/cpp/chapter-1/1-A" },
-            { text: "1-B. Windowsの環境構築", link: "/cpp/chapter-1/1-B" },
+            { text: "1.1-A. Macの環境構築", link: "/cpp/chapter-1/1-A" },
+            { text: "1.1-B. Windowsの環境構築", link: "/cpp/chapter-1/1-B" },
           ],
         },
         {
@@ -75,7 +71,7 @@ export default withMermaid({
           text: "3. 変数と入出力",
           link: "/cpp/chapter-3/",
           items: [
-            { text: "3.1 Hello, traP! の解説", link: "/cpp/chapter-3/1" },
+            { text: "3.1 Hello, traP!の解説", link: "/cpp/chapter-3/1" },
             { text: "3.2 int型変数", link: "/cpp/chapter-3/2" },
             { text: "3.3 標準入出力", link: "/cpp/chapter-3/3" },
             {
@@ -92,6 +88,10 @@ export default withMermaid({
               ],
             },
           ],
+        },
+        {
+          text: "2025年度版テキスト",
+          link: "/text/chapter-0/",
         },
       ],
       "/text/": [
