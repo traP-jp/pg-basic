@@ -1,4 +1,4 @@
-# 3.Q.1 Multiplication（★☆☆）
+# 3.Q Multiplication（★☆☆）
 
 ## 問題
 

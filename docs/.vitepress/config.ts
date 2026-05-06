@@ -60,8 +60,8 @@ export default withMermaid({
               collapsed: true,
               items: [
                 {
-                  text: "2.Q.1 Hello, Shell!（★★★）",
-                  link: "/cpp/chapter-2/problems/1",
+                  text: "Hello, Shell!（★★★）",
+                  link: "/cpp/chapter-2/problems/hello-shell",
                 },
               ],
             },
@@ -79,9 +79,9 @@ export default withMermaid({
               link: "/cpp/chapter-3/problems/",
               collapsed: true,
               items: [
-                { text: "3.Q.1 Multiplication（★☆☆）", link: "/cpp/chapter-3/problems/1" },
-                { text: "3.Q.2 Sum of n（★★☆）", link: "/cpp/chapter-3/problems/2" },
-                { text: "3.Q.3 4bit（★★☆）", link: "/cpp/chapter-3/problems/3" },
+                { text: "Multiplication（★☆☆）", link: "/cpp/chapter-3/problems/multiplication" },
+                { text: "Sum of n（★★☆）", link: "/cpp/chapter-3/problems/sum-of-n" },
+                { text: "4bit（★★☆）", link: "/cpp/chapter-3/problems/4bit" },
               ],
             },
           ],

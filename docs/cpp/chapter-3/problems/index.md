@@ -8,6 +8,6 @@
 * ★★★：ややトリッキーな問題が並んでいます。余裕があれば取り組んでみましょう。
 :::
 
-- [3.Q.1 Multiplication（★☆☆）](1)
-- [3.Q.2 Sum（★★☆）](2)
-- [3.Q.3 4bit（★★☆）](3)
+- [Multiplication（★☆☆）](multiplication)
+- [Sum of n（★★☆）](sum-of-n)
+- [4bit（★★☆）](4bit)
