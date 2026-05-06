@@ -32,10 +32,6 @@ export default withMermaid({
     sidebar: {
       "/cpp/": [
         {
-          text: "2025年度版テキスト",
-          link: "/text/chapter-0/",
-        },
-        {
           text: "はじめに",
           link: "/cpp/preface/",
           items: [
@@ -47,8 +43,8 @@ export default withMermaid({
           text: "1. 環境構築",
           link: "/cpp/chapter-1/",
           items: [
-            { text: "1-A. Macの環境構築", link: "/cpp/chapter-1/1-A" },
-            { text: "1-B. Windowsの環境構築", link: "/cpp/chapter-1/1-B" },
+            { text: "1.1-A. Macの環境構築", link: "/cpp/chapter-1/1-A" },
+            { text: "1.1-B. Windowsの環境構築", link: "/cpp/chapter-1/1-B" },
           ],
         },
         {
@@ -59,12 +55,12 @@ export default withMermaid({
             { text: "2.2 作業環境の構築", link: "/cpp/chapter-2/2" },
             { text: "2.3 はじめてのプログラミング", link: "/cpp/chapter-2/3" },
             {
-              text: "練習問題",
+              text: "2.Q 練習問題",
               link: "/cpp/chapter-2/problems/",
               collapsed: true,
               items: [
                 {
-                  text: "2-Q1. Hello, Shell!",
+                  text: "Hello, Shell!（★★★）",
                   link: "/cpp/chapter-2/problems/hello-shell",
                 },
               ],
@@ -75,28 +71,29 @@ export default withMermaid({
           text: "3. 変数と入出力",
           link: "/cpp/chapter-3/",
           items: [
-            { text: "3.1 Hello, traP! の解説", link: "/cpp/chapter-3/1" },
+            { text: "3.1 Hello, traP!の解説", link: "/cpp/chapter-3/1" },
             { text: "3.2 int型変数", link: "/cpp/chapter-3/2" },
             { text: "3.3 標準入出力", link: "/cpp/chapter-3/3" },
             {
-              text: "練習問題",
+              text: "3.Q 練習問題",
               link: "/cpp/chapter-3/problems/",
               collapsed: true,
               items: [
-                {
-                  text: "3-A1. Multiplication",
-                  link: "/cpp/chapter-3/problems/multiplication",
-                },
-                { text: "3-B1. 4bit", link: "/cpp/chapter-3/problems/4bit" },
-                { text: "3-B2. Sum", link: "/cpp/chapter-3/problems/sum" },
+                { text: "Multiplication（★☆☆）", link: "/cpp/chapter-3/problems/multiplication" },
+                { text: "Sum of n（★★☆）", link: "/cpp/chapter-3/problems/sum-of-n" },
+                { text: "4bit（★★☆）", link: "/cpp/chapter-3/problems/4bit" },
               ],
             },
           ],
         },
+        {
+          text: "2025年度版テキスト",
+          link: "/text/chapter-0/",
+        },
       ],
       "/text/": [
         {
-          text: "2026年度版テキスト [WIP]",
+          text: "[WIP] 2026年度版テキスト",
           link: "/cpp/preface/",
         },
         {

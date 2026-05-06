@@ -12,3 +12,7 @@ mjx-container.MathJax svg {
 summary {
   list-style-type: revert;
 }
+
+.vp-doc :not(pre) > code {
+  margin: 0 3px;
+}

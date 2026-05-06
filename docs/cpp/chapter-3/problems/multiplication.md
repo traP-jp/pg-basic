@@ -1,54 +1,161 @@
-# 3-A1. Multiplication
+# 3.Q Multiplication（★☆☆）
 
-cinでint型の整数を2つ受け取って、その積をターミナルに出力しよう。
+## 問題
 
-### 入力/出力例
+標準入力から整数を3つ受け取って、3つの数の積を出力するプログラムを作ってみよう。プログラムの書き方が分からないときは、[3.3.2](../3#_3-3-2-%E6%A8%99%E6%BA%96%E5%85%A5%E5%8A%9B)にあるプログラムを参考にしよう。
 
-::: details 例1
+（入力される整数は大きすぎず、オーバーフローは気にしなくて良いものとする。）
 
-**入力**
+## 入出力例
 
+ここに書かれているのはあくまでも例です。これ以外の値が入力されたとしても、正しく出力できるようなプログラムを作成してください。
+
+### 例1
+
+#### 入力
+
+```Input:line-numbers
+3
+4
+5
 ```
-3 4
+
+#### 出力
+
+```Output:line-numbers
+60
 ```
 
-**出力**
+### 例2
 
+#### 入力
+
+```Input:line-numbers
+1
+3
+5
 ```
-12
+
+#### 出力
+
+```Output:line-numbers
+15
 ```
 
-:::
-
-### ヒント
+## ヒント
 
 ::: details ヒント1
 
-２つの値を入力から受け取るには、
-```cpp
-cin >> first_value >> second_value;
-```
-:::
+[3.3.2](../3#_3-3-2-%E6%A8%99%E6%BA%96%E5%85%A5%E5%8A%9B)の最後に書かれているプログラムを改造することを考えよう。
 
-### 解答例
-
-::: tip 解答例1
-
-::: spoiler クリックして展開
-
-```cpp
+```cpp:line-numbers
 #include <iostream>
 using namespace std;
 
 int main() {
-    // 変数を２つ宣言
-    int lhs, rhs;
-    // 整数値を２つ受け取る
-    cin >> lhs >> rhs;
-    // 積を計算
-    int answer = lhs * rhs;
-    // 出力
-    cout << answer << endl;
+  int x;
+  int y;
+  cin >> x >> y;
+
+  cout << x+y << endl;
+}
+```
+
+このプログラムは、**2つの整数**を受け取って、**和**を出力するプログラムであった。
+
+今回作りたいプログラムは、**3つの整数**を受け取って、**積**を出力するプログラムである。
+:::
+
+::: details ヒント2
+
+```cpp:line-numbers{7}
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x;
+  int y;
+  int z;
+  cin >> x >> y;
+
+  cout << x+y << endl;
+}
+```
+
+3つの値を入力から受け取るには、まず、7行目に変数`z`の定義を追加する必要がある。（変数名は`z`でなくてもOK。）
+
+では、`z`が入力を受け取るようにするには、どうすれば良いだろうか？
+:::
+
+::: details ヒント3
+
+```cpp:line-numbers{8}
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x;
+  int y;
+  int z;
+  cin >> x >> y >> z;
+
+  cout << x+y << endl;
+}
+```
+
+3つの値を入力から受け取るには、8行目に変数`z`を加えてあげれば良い。入力は`>>`で繋げることができるのであった。
+
+では、`x`・`y`・`z`の積を出力するには、どこを書き換えれば良いだろうか？
+:::
+
+::: details ヒント4
+
+```cpp:line-numbers{10}
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x;
+  int y;
+  int z;
+  cin >> x >> y >> z;
+
+  cout << x+y << endl;
+}
+```
+
+出力される値は10行目で決まっているから、ここを書き換えてみよう。積の記号は`*`である。
+:::
+
+## 解答例
+
+::: details 解答例
+
+```cpp:line-numbers
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x;
+  int y;
+  int z;  // 3つの変数x, y, zを定義
+  cin >> x >> y >> z;  // 3つの整数を受け取る
+
+  cout << x*y*z << endl;  // 積を計算して出力
+}
+```
+
+変数の定義はまとめて行うこともできる。まとめて行うときには、`,`で区切れば良い。
+
+```cpp:line-numbers{5}
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x, y, z;  // 3つの変数x, y, zを定義
+  cin >> x >> y >> z;  // 3つの整数を受け取る
+
+  cout << x*y*z << endl;  // 積を計算して出力
 }
 ```
 
