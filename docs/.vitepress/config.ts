@@ -87,6 +87,23 @@ export default withMermaid({
           ],
         },
         {
+          text: "[WIP] 4. 条件分岐",
+          link: "/cpp/chapter-4/",
+          items: [
+            { text: "[WIP] 4.1 if文", link: "/cpp/chapter-4/1" },
+            { text: "[WIP] 4.2 演算子", link: "/cpp/chapter-4/2" },
+          ],
+        },
+        {
+          text: "[WIP] 5. 型",
+          link: "/cpp/chapter-5/",
+          items: [
+            { text: "[WIP] 5.1 bool型", link: "/cpp/chapter-5/1" },
+            { text: "[WIP] 5.2 double型", link: "/cpp/chapter-5/2" },
+            { text: "[WIP] 5.3 string型①", link: "/cpp/chapter-5/3" },
+          ],
+        },
+        {
           text: "2025年度版テキスト",
           link: "/text/chapter-0/",
         },
