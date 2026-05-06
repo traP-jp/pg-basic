@@ -138,21 +138,21 @@ using namespace std;
 int main() {
   int x;
   int y;
-  int z;  // 3つの変数x, y, zを宣言
+  int z;  // 3つの変数x, y, zを定義
   cin >> x >> y >> z;  // 3つの整数を受け取る
 
   cout << x*y*z << endl;  // 積を計算して出力
 }
 ```
 
-変数の宣言はまとめて行うこともできる。まとめて行うときには、`,`で区切れば良い。
+変数の定義はまとめて行うこともできる。まとめて行うときには、`,`で区切れば良い。
 
 ```cpp:line-numbers{5}
 #include <iostream>
 using namespace std;
 
 int main() {
-  int x, y, z;  // 3つの変数x, y, zを宣言
+  int x, y, z;  // 3つの変数x, y, zを定義
   cin >> x >> y >> z;  // 3つの整数を受け取る
 
   cout << x*y*z << endl;  // 積を計算して出力
