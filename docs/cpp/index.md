@@ -37,13 +37,13 @@ hero:
   - [3.2 int型変数](/cpp/chapter-3/2)
   - [3.3 標準入出力](/cpp/chapter-3/3)
   - [練習問題](/cpp/chapter-3/problems/)
-- [[WIP] 4. 条件分岐](/cpp/chapter-4/)
-  - [[WIP] 4.1 if文](/cpp/chapter-4/1)
-  - [[WIP] 4.2 演算子](/cpp/chapter-4/2)
-- [[WIP] 5. 型](/cpp/chapter-5/)
-  - [[WIP] 5.1 bool型](/cpp/chapter-5/1)
-  - [[WIP] 5.2 double型](/cpp/chapter-5/2)
-  - [[WIP] 5.3 string型①](/cpp/chapter-5/3)
+- [4. 条件分岐](/cpp/chapter-4/)
+  - [4.1 if文](/cpp/chapter-4/1)
+  - [4.2 演算子](/cpp/chapter-4/2)
+- [5. 型](/cpp/chapter-5/)
+  - [5.1 bool型](/cpp/chapter-5/1)
+  - [5.2 double型](/cpp/chapter-5/2)
+  - [5.3 string型①](/cpp/chapter-5/3)
 
 ::: details 2025年度版テキスト
 
