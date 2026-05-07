@@ -137,6 +137,35 @@ export default withMermaid({
           ],
         },
         {
+          text: "[WIP] 6. 繰り返し処理",
+          link: "/cpp/chapter-6/",
+          items: [
+            { text: "[WIP] 6.1 for文", link: "/cpp/chapter-6/1" },
+            { text: "[WIP] 6.2 while文", link: "/cpp/chapter-6/2" },
+            { text: "[WIP] 6.3 配列", link: "/cpp/chapter-6/3" },
+            { text: "[WIP] 6.4 string型②とchar型", link: "/cpp/chapter-6/4" },
+            { text: "[WIP] 6.5 continueとbreak", link: "/cpp/chapter-6/5" },
+          ],
+        },
+        {
+          text: "[WIP] 7. 関数",
+          link: "/cpp/chapter-7/",
+          items: [
+            { text: "[WIP] 7.1 関数とは", link: "/cpp/chapter-7/1" },
+            { text: "[WIP] 7.2 引数", link: "/cpp/chapter-7/2" },
+            { text: "[WIP] 7.3 返り値", link: "/cpp/chapter-7/3" },
+            { text: "[WIP] 7.4 [発展] 参照渡し", link: "/cpp/chapter-7/4" },
+          ],
+        },
+        {
+          text: "[WIP] 8. 構造体",
+          link: "/cpp/chapter-8/",
+          items: [
+            { text: "[WIP] 8.1 構造体とは", link: "/cpp/chapter-8/1" },
+            { text: "[WIP] 8.2 メソッド", link: "/cpp/chapter-8/2" },
+          ],
+        },
+        {
           text: "2025年度版テキスト",
           link: "/text/chapter-0/",
         },
