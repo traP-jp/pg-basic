@@ -79,28 +79,61 @@ export default withMermaid({
               link: "/cpp/chapter-3/problems/",
               collapsed: true,
               items: [
-                { text: "Multiplication（★☆☆）", link: "/cpp/chapter-3/problems/multiplication" },
-                { text: "Sum of n（★★☆）", link: "/cpp/chapter-3/problems/sum-of-n" },
+                {
+                  text: "Multiplication（★☆☆）",
+                  link: "/cpp/chapter-3/problems/multiplication",
+                },
+                {
+                  text: "Sum of n（★★☆）",
+                  link: "/cpp/chapter-3/problems/sum-of-n",
+                },
                 { text: "4bit（★★☆）", link: "/cpp/chapter-3/problems/4bit" },
               ],
             },
           ],
         },
         {
-          text: "[WIP] 4. 条件分岐",
+          text: "4. 条件分岐",
           link: "/cpp/chapter-4/",
           items: [
-            { text: "[WIP] 4.1 if文", link: "/cpp/chapter-4/1" },
-            { text: "[WIP] 4.2 演算子", link: "/cpp/chapter-4/2" },
+            { text: "4.1 if文", link: "/cpp/chapter-4/1" },
+            { text: "4.2 演算子", link: "/cpp/chapter-4/2" },
+            {
+              text: "4.Q 練習問題",
+              link: "/cpp/chapter-4/problems/",
+              collapsed: true,
+              items: [
+                {
+                  text: "Positive or Negative（★☆☆）",
+                  link: "/cpp/chapter-4/problems/positive-or-negative",
+                },
+                {
+                  text: "Fraction（★★☆）",
+                  link: "/cpp/chapter-4/problems/fraction",
+                },
+              ],
+            },
           ],
         },
         {
-          text: "[WIP] 5. 型",
+          text: "5. 型",
           link: "/cpp/chapter-5/",
           items: [
-            { text: "[WIP] 5.1 bool型", link: "/cpp/chapter-5/1" },
-            { text: "[WIP] 5.2 double型", link: "/cpp/chapter-5/2" },
-            { text: "[WIP] 5.3 string型①", link: "/cpp/chapter-5/3" },
+            { text: "5.1 bool型", link: "/cpp/chapter-5/1" },
+            { text: "5.2 double型", link: "/cpp/chapter-5/2" },
+            { text: "5.3 string型①", link: "/cpp/chapter-5/3" },
+            {
+              text: "5.Q 練習問題",
+              link: "/cpp/chapter-5/problems/",
+              collapsed: true,
+              items: [
+                {
+                  text: "Circle Area（★☆☆）",
+                  link: "/cpp/chapter-5/problems/circle-area",
+                },
+                { text: "Echo（★☆☆）", link: "/cpp/chapter-5/problems/echo" },
+              ],
+            },
           ],
         },
         {
