@@ -44,6 +44,20 @@ hero:
   - [5.1 bool型](/cpp/chapter-5/1)
   - [5.2 double型](/cpp/chapter-5/2)
   - [5.3 string型①](/cpp/chapter-5/3)
+- [[WIP] 6. 繰り返し処理](/cpp/chapter-6/)
+  - [[WIP] 6.1 for文](/cpp/chapter-6/1)
+  - [[WIP] 6.2 while文](/cpp/chapter-6/2)
+  - [[WIP] 6.3 配列](/cpp/chapter-6/3)
+  - [[WIP] 6.4 string型②とchar型](/cpp/chapter-6/4)
+  - [[WIP] 6.5 continueとbreak](/cpp/chapter-6/5)
+- [[WIP] 7. 関数](/cpp/chapter-7/)
+  - [[WIP] 7.1 関数とは](/cpp/chapter-7/1)
+  - [[WIP] 7.2 引数](/cpp/chapter-7/2)
+  - [[WIP] 7.3 返り値](/cpp/chapter-7/3)
+  - [[WIP] 7.4 [発展] 参照渡し](/cpp/chapter-7/4)
+- [[WIP] 8. 構造体](/cpp/chapter-8/)
+  - [[WIP] 8.1 構造体とは](/cpp/chapter-8/1)
+  - [[WIP] 8.2 メソッド](/cpp/chapter-8/2)
 
 ::: details 2025年度版テキスト
 
