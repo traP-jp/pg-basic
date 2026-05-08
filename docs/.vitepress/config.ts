@@ -144,36 +144,112 @@ export default withMermaid({
             { text: "6.2 while文", link: "/cpp/chapter-6/2" },
             { text: "6.3 配列", link: "/cpp/chapter-6/3" },
             { text: "6.4 string型②とchar型", link: "/cpp/chapter-6/4" },
-            { text: "6.5 continueとbreak", link: "/cpp/chapter-6/5" },
+            { text: "6.5 breakとcontinue", link: "/cpp/chapter-6/5" },
             {
               text: "6.Q 練習問題",
               link: "/cpp/chapter-6/problems/",
               collapsed: true,
               items: [
-                { text: "Fibonatti", link: "/cpp/chapter-6/problems/fibonatti" },
-                { text: "DO NOT FAIL", link: "/cpp/chapter-6/problems/do-not-fail" },
-                { text: "lower or UPPER", link: "/cpp/chapter-6/problems/lower-or-upper" },
-                { text: "fizz-buzz 2D", link: "/cpp/chapter-6/problems/fizz-buzz-2d" },
+                {
+                  text: "Count Down（★☆☆）",
+                  link: "/cpp/chapter-6/problems/count-down",
+                },
+                {
+                  text: "Even Numbers in Range（★☆☆）",
+                  link: "/cpp/chapter-6/problems/even-number-in-range",
+                },
+                {
+                  text: "DO NOT FAIL（★☆☆）",
+                  link: "/cpp/chapter-6/problems/do-not-fail",
+                },
+                {
+                  text: "lower or UPPER（★☆☆）",
+                  link: "/cpp/chapter-6/problems/lower-or-upper",
+                },
+                {
+                  text: "Prime Check（★★☆）",
+                  link: "/cpp/chapter-6/problems/prime-check",
+                },
+                {
+                  text: "Fibonatti（★★☆）",
+                  link: "/cpp/chapter-6/problems/fibonatti",
+                },
+
+                {
+                  text: "fizz-buzz 2D（★★★）",
+                  link: "/cpp/chapter-6/problems/fizz-buzz-2d",
+                },
               ],
             },
           ],
         },
         {
-          text: "[WIP] 7. 関数",
+          text: "7. 関数",
           link: "/cpp/chapter-7/",
           items: [
-            { text: "[WIP] 7.1 関数とは", link: "/cpp/chapter-7/1" },
-            { text: "[WIP] 7.2 引数", link: "/cpp/chapter-7/2" },
-            { text: "[WIP] 7.3 返り値", link: "/cpp/chapter-7/3" },
-            { text: "[WIP] 7.4 [発展] 参照渡し", link: "/cpp/chapter-7/4" },
+            { text: "7.1 関数とは", link: "/cpp/chapter-7/1" },
+            { text: "7.2 引数", link: "/cpp/chapter-7/2" },
+            { text: "7.3 返り値", link: "/cpp/chapter-7/3" },
+            { text: "7.4 [発展] 参照渡し", link: "/cpp/chapter-7/4" },
+            {
+              text: "7.Q 練習問題",
+              link: "/cpp/chapter-7/problems/",
+              collapsed: true,
+              items: [
+                {
+                  text: "Max of Three（★☆☆）",
+                  link: "/cpp/chapter-7/problems/max-of-three",
+                },
+                {
+                  text: "Swap Two Numbers（★★☆）",
+                  link: "/cpp/chapter-7/problems/swap-two",
+                },
+              ],
+            },
           ],
         },
         {
-          text: "[WIP] 8. 構造体",
+          text: "8. 構造体",
           link: "/cpp/chapter-8/",
           items: [
-            { text: "[WIP] 8.1 構造体とは", link: "/cpp/chapter-8/1" },
-            { text: "[WIP] 8.2 メソッド", link: "/cpp/chapter-8/2" },
+            { text: "8.1 構造体とは", link: "/cpp/chapter-8/1" },
+            { text: "8.2 メソッド", link: "/cpp/chapter-8/2" },
+            {
+              text: "8.Q 練習問題",
+              link: "/cpp/chapter-8/problems/",
+              collapsed: true,
+              items: [
+                {
+                  text: "Order（★★☆）",
+                  link: "/cpp/chapter-8/problems/order",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          text: "（2025年度版テキスト）<br>VIII. 発展事項 (WIP)",
+          link: "/text/chapter-8/",
+          items: [
+            { text: "計算量とオーダー", link: "/text/chapter-8/complexity" },
+            { text: "再帰関数", link: "/text/chapter-8/recursive-function" },
+            { text: "実行時間", link: "/text/chapter-8/exec-time" },
+            { text: "カプセル化", link: "/text/chapter-8/capsule" },
+            {
+              text: "練習問題",
+              link: "/text/chapter-8/practice/",
+              collapsed: true,
+              items: [
+                {
+                  text: "Capsulated Zer0-Star",
+                  link: "/text/chapter-8/practice/capsulate-user",
+                },
+                {
+                  text: "Exponentation",
+                  link: "/text/chapter-8/practice/exponentation",
+                },
+              ],
+            },
           ],
         },
         {
@@ -183,7 +259,7 @@ export default withMermaid({
       ],
       "/text/": [
         {
-          text: "[WIP] 2026年度版テキスト",
+          text: "2026年度版テキスト",
           link: "/cpp/preface/",
         },
         {
