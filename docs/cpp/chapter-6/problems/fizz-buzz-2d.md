@@ -1,4 +1,4 @@
-# 6.Q fizz-buzz 2D
+# 6.Q fizz-buzz 2D（★★★）
 
 ## 問題
 
@@ -24,13 +24,13 @@
 #### 出力
 
 ```Output:line-numbers
-1	2	3	4	Bu	6	
-2	4	6	8	Bu	12	
-Fi	Fi	Fi	Fi	FB	Fi	
-4	8	12	16	Bu	24	
-5	10	15	20	Bu	30	
-Fi	Fi	Fi	Fi	FB	Fi	
-7	14	21	28	Bu	42	
+1	2	3	4	Bu	6
+2	4	6	8	Bu	12
+Fi	Fi	Fi	Fi	FB	Fi
+4	8	12	16	Bu	24
+5	10	15	20	Bu	30
+Fi	Fi	Fi	Fi	FB	Fi
+7	14	21	28	Bu	42
 ```
 
 $i$行$j$列に$a_{i,j}$を出力している。

@@ -1,4 +1,4 @@
-# 6.Q lower or UPPER
+# 6.Q lower or UPPER（★☆☆）
 
 ## 問題
 

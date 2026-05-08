@@ -8,7 +8,10 @@
 * ★★★：ややトリッキーな問題が並んでいます。余裕があれば取り組んでみましょう。
 :::
 
-- [Fibonatti](fibonatti)
-- [DO NOT FAIL](do-not-fail)
-- [lower or UPPER](lower-or-upper)
-- [fizz-buzz 2D](fizz-buzz-2d)
+- [Count Down（★☆☆）](count-down)
+- [Even Numbers in Range（★☆☆）](even-sum)
+- [lower or UPPER（★☆☆）](lower-or-upper)
+- [DO NOT FAIL（★☆☆）](do-not-fail)
+- [Prime Check（★★☆）](prime-check)
+- [Fibonatti（★★☆）](fibonatti)
+- [fizz-buzz 2D（★★★）](fizz-buzz-2d)

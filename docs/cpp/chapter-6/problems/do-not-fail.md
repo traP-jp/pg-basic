@@ -1,4 +1,4 @@
-# 6.Q DO NOT FAIL
+# 6.Q DO NOT FAIL（★☆☆）
 
 ## 問題
 

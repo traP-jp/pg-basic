@@ -1,4 +1,4 @@
-# 6.Q Fibonatti
+# 6.Q Fibonatti（★★☆）
 
 ## 問題
 
