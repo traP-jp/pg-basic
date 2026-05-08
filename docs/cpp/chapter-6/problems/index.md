@@ -9,7 +9,7 @@
 :::
 
 - [Count Down（★☆☆）](count-down)
-- [Even Numbers in Range（★☆☆）](even-sum)
+- [Even Numbers in Range（★☆☆）](even-number-in-range)
 - [lower or UPPER（★☆☆）](lower-or-upper)
 - [DO NOT FAIL（★☆☆）](do-not-fail)
 - [Prime Check（★★☆）](prime-check)
