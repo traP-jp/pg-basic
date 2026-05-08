@@ -137,14 +137,25 @@ export default withMermaid({
           ],
         },
         {
-          text: "[WIP] 6. 繰り返し処理",
+          text: "6. 繰り返し処理",
           link: "/cpp/chapter-6/",
           items: [
-            { text: "[WIP] 6.1 for文", link: "/cpp/chapter-6/1" },
-            { text: "[WIP] 6.2 while文", link: "/cpp/chapter-6/2" },
-            { text: "[WIP] 6.3 配列", link: "/cpp/chapter-6/3" },
-            { text: "[WIP] 6.4 string型②とchar型", link: "/cpp/chapter-6/4" },
-            { text: "[WIP] 6.5 continueとbreak", link: "/cpp/chapter-6/5" },
+            { text: "6.1 for文", link: "/cpp/chapter-6/1" },
+            { text: "6.2 while文", link: "/cpp/chapter-6/2" },
+            { text: "6.3 配列", link: "/cpp/chapter-6/3" },
+            { text: "6.4 string型②とchar型", link: "/cpp/chapter-6/4" },
+            { text: "6.5 continueとbreak", link: "/cpp/chapter-6/5" },
+            {
+              text: "6.Q 練習問題",
+              link: "/cpp/chapter-6/problems/",
+              collapsed: true,
+              items: [
+                { text: "Fibonatti", link: "/cpp/chapter-6/problems/fibonatti" },
+                { text: "DO NOT FAIL", link: "/cpp/chapter-6/problems/do-not-fail" },
+                { text: "lower or UPPER", link: "/cpp/chapter-6/problems/lower-or-upper" },
+                { text: "fizz-buzz 2D", link: "/cpp/chapter-6/problems/fizz-buzz-2d" },
+              ],
+            },
           ],
         },
         {
