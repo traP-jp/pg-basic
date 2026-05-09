@@ -51,14 +51,14 @@ hero:
   - [6.4 string型②とchar型](/cpp/chapter-6/4)
   - [6.5 continueとbreak](/cpp/chapter-6/5)
   - [練習問題](/cpp/chapter-6/problems/)
-- [[WIP] 7. 関数](/cpp/chapter-7/)
-  - [[WIP] 7.1 関数とは](/cpp/chapter-7/1)
-  - [[WIP] 7.2 引数](/cpp/chapter-7/2)
-  - [[WIP] 7.3 返り値](/cpp/chapter-7/3)
-  - [[WIP] 7.4 [発展] 参照渡し](/cpp/chapter-7/4)
-- [[WIP] 8. 構造体](/cpp/chapter-8/)
-  - [[WIP] 8.1 構造体とは](/cpp/chapter-8/1)
-  - [[WIP] 8.2 メソッド](/cpp/chapter-8/2)
+- [7. 関数](/cpp/chapter-7/)
+  - [7.1 関数とは](/cpp/chapter-7/1)
+  - [7.2 引数](/cpp/chapter-7/2)
+  - [7.3 返り値](/cpp/chapter-7/3)
+  - [7.4 [発展] 参照渡し](/cpp/chapter-7/4)
+- [8. 構造体](/cpp/chapter-8/)
+  - [8.1 構造体とは](/cpp/chapter-8/1)
+  - [8.2 メソッド](/cpp/chapter-8/2)
 
 ::: details 2025年度版テキスト
 
