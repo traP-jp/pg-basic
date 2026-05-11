@@ -14,7 +14,7 @@ using namespace std;
 
 int main() {
     int a, b, c;
-    cin >> a >> b >> c
+    cin >> a >> b >> c;
     cout << max_of_three(a, b, c) << endl;
 }
 ```
@@ -80,7 +80,7 @@ int max_of_three(int x, int y, int z) {
 
 int main() {
     int a, b, c;
-    cin >> a >> b >> c
+    cin >> a >> b >> c;
     cout << max_of_three(a, b, c) << endl;
 }
 ```
