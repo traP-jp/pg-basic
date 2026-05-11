@@ -56,9 +56,11 @@ hero:
   - [7.2 引数](/cpp/chapter-7/2)
   - [7.3 返り値](/cpp/chapter-7/3)
   - [7.4 [発展] 参照渡し](/cpp/chapter-7/4)
+  - [練習問題](/cpp/chapter-7/problems/)
 - [8. 構造体](/cpp/chapter-8/)
   - [8.1 構造体とは](/cpp/chapter-8/1)
   - [8.2 メソッド](/cpp/chapter-8/2)
+  - [練習問題](/cpp/chapter-8/problems/)
 
 ::: details 2025年度版テキスト
 
